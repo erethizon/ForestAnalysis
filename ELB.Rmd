@@ -1,0 +1,131 @@
+---
+title: "Importance Values and Diversity Analysis"
+output: html_notebook
+---
+
+Going over Leslie's data to see if I get the same results she does.
+
+Prep the workspace
+```{r}
+rm(list = ls())
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+```
+
+Start with one file. It has Leslie's data plus the data from the relevant FE forests.
+
+```{r}
+DF<-read.csv("Data/forests.csv")
+```
+
+Plot some data and look for issues
+```{r}
+ggplot(DF, aes(DBH))+
+   geom_histogram()
+```
+Looks like there might be a really big tree or two.  Check them out. 
+
+```{r}
+big<-filter(DF, DBH >= 60)
+```
+Two big sugar maples at donnerville.  Reasonable.
+
+
+Now look at species to see if they are all named correctly. Start by making some factor variables
+```{r}
+species<-levels(DF$Species)
+species
+```
+Looks good. Though the white birch are likely gray birch.
+
+## Step 1. Species Richness
+Ok. Now let's get overall species richness by site.
+```{r}
+SRbySite<-DF %>% group_by(Forest) %>% summarise(
+   SR = n_distinct(Species)
+)
+```
+Now by site and by plot
+```{r}
+SRbyPlot<-DF %>% group_by(Forest, PlotID) %>% summarise(
+SR = n_distinct(Species)
+)
+```
+Now mean species richness by forest
+```{r}
+MeanSR<-SRbyPlot %>% group_by(Forest) %>% summarize(
+  MeanSR = mean(SR, na.rm = T),
+  SDSR =sd(SR, na.rm = T),
+  semSR = (sd(SR)/length(SR)),
+  N = length(SR)
+)
+```
+## Step 2. Diversity
+We'll use the vegan package to calculate diversity
+```{r}
+library(vegan)
+```
+
+To run diversity indices, we need to know, per site, the number of trees of each species.  Then we transpose into a vegan type matrix.
+
+### Create data set
+```{r}
+Diversity<-DF %>% group_by(Forest, PlotID, Species) %>% summarize(
+count = length(Tree)
+)
+```
+Now we need to spread the data across species, so that each cell is the total number of that species for that plot in that forest
+
+```{r}
+Div1<-spread(Diversity, Species, count)
+```
+This looks good, but we need to get rid of the forest name and plot id to run in vegan. 
+
+```{r}
+Div2<-Div1[,-(1:2)]
+```
+Now replace all the NA's with 0
+```{r}
+Div2[is.na(Div2)]<-0
+```
+Now we can use vegan
+Shannon index:
+
+```{r}
+Shannon<-diversity(Div2, index = "shannon")
+Simpson<-diversity(Div2, index = "simpson")
+InvSimp<-diversity(Div2, index = "invsimpson")
+```
+Now append the Diversity data set
+```{r}
+SRbyPlot$Shannon<-Shannon
+SRbyPlot$Simpson<-Simpson
+SRbyPlot$Inv_Simpson<-InvSimp
+```
+And now get all the means
+```{r}
+MeanDiv<-SRbyPlot %>% group_by(Forest) %>% summarize(
+  N = length(SR),
+  MeanSR = mean(SR, na.rm = T),
+  SDSR =sd(SR, na.rm = T),
+  semSR = (sd(SR)/length(SR)),
+  MeanShan=mean(Shannon, na.rm = T),
+  SD_Shan=sd(Shannon, na.rm = T),
+  semShan = (sd(Shannon)/length(SR)),
+  MeanSimp = mean(Simpson, na.rm = T),
+  SD_Simp=sd(Simpson, na.rm = T),
+  semSimp = (sd(Simpson)/length(SR)),
+  MeanInSimp = mean(Inv_Simpson, na.rm = T),
+  SD_InSimp=sd(Inv_Simpson, na.rm = T),
+  semInSimp = (sd(Inv_Simpson)/length(SR)),
+  
+)
+```
+
+
+
+
+
+
+

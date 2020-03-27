@@ -1,0 +1,937 @@
+ID,Date,Forest,ForestType,PlotNum,PlotID,Quadrant,Tree,Species,DBH,Xcoord,Ycoord,Type,Height,Circle
+296,16-Oct-19,Whipoorwill,Pine,2,14,Q4,NA,american beech,5,5,6,sapling,<1,3
+299,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,5,14,15,sapling,<1,1
+300,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,5,14,15,sapling,<1,1
+301,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,5,14,15,sapling,<1,1
+302,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,5,14,15,sapling,<1,1
+303,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,5,14,15,sapling,<1,1
+304,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,5,14,15,sapling,<1,1
+305,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,5,14,15,sapling,<1,1
+306,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,5,14,15,sapling,<1,1
+307,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,5,14,15,sapling,<1,1
+308,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,NA,american beech,5,18,19,sapling,<1,2
+309,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,NA,american beech,5,18,19,sapling,<1,2
+292,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,american elm,5,12,13,sapling,>2,1
+313,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,american elm,5,6,7,sapling,6,3
+317,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,american elm,5,17,18,sapling,7,2
+642,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,american elm,5,6,7,sapling,<1,3
+315,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,box elder,5,17,18,sapling,5,2
+178,4-Oct-17,South Hammond,Pine,1,4,Q2,137,choke cherry,5,6,2.5,sapling,6,
+232,11-Oct-17,South Hammond,Pine,3,6,Q2,39,choke cherry,5,8.5,2.1,sapling,3.5,SH3Q2
+297,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,NA,red maple,5,18,19,sapling,6,1
+171,4-Oct-17,South Hammond,Pine,1,4,Q1,86,red oak,5,,,sapling,4,
+210,4-Oct-17,South Hammond,Pine,2,5,Q2,33,red oak,5,2.4,7.7,sapling,10.1,SH2Q2
+222,4-Oct-17,South Hammond,Pine,2,5,Q4,36,red oak,5,2,7.9,sapling,14,SH2Q4
+231,11-Oct-17,South Hammond,Pine,3,6,Q2,38,red oak,5,8.5,2.1,sapling,4.5,SH3Q2
+172,4-Oct-17,South Hammond,Pine,1,4,Q1,85,shagbark hickory,5,,,sapling,4,
+173,4-Oct-17,South Hammond,Pine,1,4,Q1,88,shagbark hickory,5,,,sapling,4,
+157,27-Sep-17,Donnerville,Deciduous,3,3,Q4,27,sugar maple,5,2,4.8,sapling,5,Don3Q4
+288,11-Oct-17,South Hammond,Pine,3,6,Q4,61,sugar maple,5,2,8.1,sapling,5,SH3Q4
+298,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q4,NA,sugar maple,5,4,5,sapling,3,3
+310,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,sugar maple,5,18,19,sapling,4,2
+311,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,sugar maple,5,6,7,sapling,3,3
+312,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,sugar maple,5,6,7,sapling,4,3
+314,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,sugar maple,5,6,7,sapling,5,3
+316,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,5,17,18,sapling,2,2
+318,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,5,17,18,sapling,2,2
+319,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,5,17,18,sapling,2,2
+320,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,5,17,18,sapling,3,2
+321,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,5,17,18,sapling,3,2
+322,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,5,17,18,sapling,3,2
+323,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,5,17,18,sapling,3,2
+5,1-Nov-17,Degrasse,Pine,1,10,Q2,121,white pine,5,4.5,2.2,sapling,5.2,P1Q2
+170,4-Oct-17,South Hammond,Pine,1,4,Q1,82,white pine,5,,,sapling,4,
+174,4-Oct-17,South Hammond,Pine,1,4,Q1,90,white pine,5,4,4,sapling,6,
+175,4-Oct-17,South Hammond,Pine,1,4,Q1,91,white pine,5,4,3,sapling,5,
+177,4-Oct-17,South Hammond,Pine,1,4,Q2,136,white pine,5,7,1,sapling,7.5,
+73,20-Sep-17,Donnerville,Deciduous,1,1,Q3,5,american beech,1,4.4,3.7,seedling,2.2,Don1Q3
+75,20-Sep-17,Donnerville,Deciduous,1,1,Q3,3,american beech,1,4.4,3.7,seedling,3.8,Don1Q3
+111,20-Sep-17,Donnerville,Deciduous,2,2,Q3,15,american beech,1,5.6,1.3,seedling,1.9,Don2Q3
+113,20-Sep-17,Donnerville,Deciduous,2,2,Q3,13,american beech,1,5.6,1.3,seedling,2.3,Don2Q3
+114,20-Sep-17,Donnerville,Deciduous,2,2,Q3,12,american beech,1,5.6,1.3,seedling,3.6,Don2Q3
+115,20-Sep-17,Donnerville,Deciduous,2,2,Q3,16,american beech,1,5.6,1.3,seedling,3.2,Don2Q3
+144,27-Sep-17,Donnerville,Deciduous,3,3,Q2,22,american beech,1,8.1,0.8,seedling,2.1,Don3Q2
+145,27-Sep-17,Donnerville,Deciduous,3,3,Q2,21,american beech,1,8.1,0.8,seedling,0.6,Don3Q2
+152,27-Sep-17,Donnerville,Deciduous,3,3,Q3,26,american beech,1,0.2,6.7,seedling,0.7,Don3Q3
+153,27-Sep-17,Donnerville,Deciduous,3,3,Q3,25,american beech,1,0.2,6.7,seedling,0.7,Don3Q3
+154,27-Sep-17,Donnerville,Deciduous,3,3,Q3,24,american beech,1,0.2,6.7,seedling,2,Don3Q3
+527,16-Oct-19,Whipoorwill,Pine,2,14,Q2,NA,american beech,1,17,18,seedling,<1,1
+528,16-Oct-19,Whipoorwill,Pine,2,14,Q2,NA,american beech,1,17,18,seedling,<1,1
+530,16-Oct-19,Whipoorwill,Pine,2,14,Q3,NA,american beech,1,17,18,seedling,<1,2
+531,16-Oct-19,Whipoorwill,Pine,2,14,Q3,NA,american beech,1,17,18,seedling,<1,2
+535,16-Oct-19,Whipoorwill,Pine,2,14,Q4,NA,american beech,1,5,6,seedling,<1,3
+536,16-Oct-19,Whipoorwill,Pine,2,14,Q4,NA,american beech,1,5,6,seedling,<1,3
+537,16-Oct-19,Whipoorwill,Pine,2,14,Q4,NA,american beech,1,5,6,seedling,<1,3
+540,16-Oct-19,Whipoorwill,Pine,2,14,Q4,NA,american beech,1,5,6,seedling,<1,3
+541,16-Oct-19,Whipoorwill,Pine,2,14,Q4,NA,american beech,1,5,6,seedling,<1,3
+542,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,NA,american beech,1,18,19,seedling,1.5,1
+543,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,NA,american beech,1,18,19,seedling,1,1
+544,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,NA,american beech,1,18,19,seedling,<1,1
+545,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,NA,american beech,1,18,19,seedling,<1,1
+546,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,NA,american beech,1,17,18,seedling,<1,2
+547,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,NA,american beech,1,17,18,seedling,<1,2
+548,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,NA,american beech,1,17,18,seedling,<1,2
+549,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,NA,american beech,1,17,18,seedling,<1,2
+550,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,NA,american beech,1,17,18,seedling,<1,2
+551,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,NA,american beech,1,17,18,seedling,<1,2
+552,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q4,NA,american beech,1,4,5,seedling,<1,3
+553,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q4,NA,american beech,1,4,5,seedling,<1,3
+556,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q4,NA,american beech,1,4,5,seedling,<1,3
+557,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,1,14,15,seedling,<1,1
+558,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,NA,american beech,1,14,15,seedling,<1,1
+559,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,NA,american beech,1,18,19,seedling,<1,2
+560,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,NA,american beech,1,18,19,seedling,<1,2
+561,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,NA,american beech,1,18,19,seedling,<1,2
+562,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,NA,american beech,1,18,19,seedling,<1,2
+563,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,NA,american beech,1,18,19,seedling,<1,2
+568,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,american beech,1,2,3,seedling,<1,3
+336,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,american elm,1,12,13,seedling,0.3,1
+340,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,american elm,1,12,13,seedling,0.15,1
+341,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,american elm,1,12,13,seedling,0.15,1
+344,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,american elm,1,12,13,seedling,0.18,1
+422,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,american elm,1,6,7,seedling,NA,2
+454,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,american elm,1,NA,NA,seedling,<1,3
+462,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,american elm,1,NA,NA,seedling,<1,3
+463,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,american elm,1,NA,NA,seedling,<1,3
+585,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+586,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+587,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+588,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+589,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+590,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+592,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+593,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+594,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+595,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+596,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+599,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+600,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+601,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+602,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+604,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+605,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+606,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+607,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,american elm,1,19,20,seedling,<1,1
+614,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+615,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+616,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+617,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+618,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+620,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+621,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+622,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+623,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+624,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+625,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+626,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+627,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+628,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,american elm,1,18,19,seedling,<1,2
+631,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,american elm,1,6,7,seedling,<1,3
+634,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,american elm,1,6,7,seedling,<1,3
+635,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,american elm,1,6,7,seedling,<1,3
+638,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,american elm,1,6,7,seedling,<1,3
+639,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,american elm,1,6,7,seedling,<1,3
+640,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,american elm,1,6,7,seedling,<1,3
+641,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,american elm,1,6,7,seedling,<1,3
+648,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+649,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+650,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+651,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+652,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+653,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+654,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+669,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+670,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+671,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+672,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+673,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+674,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+675,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+676,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+683,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+684,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+685,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+686,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+687,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+688,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+689,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+690,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+691,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+702,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+703,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+704,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+705,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+706,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,american elm,1,18,19,seedling,<1,1
+721,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,american elm,1,17,18,seedling,<1,2
+722,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,american elm,1,17,18,seedling,<1,2
+723,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,american elm,1,17,18,seedling,<1,2
+724,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,american elm,1,17,18,seedling,<1,2
+755,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,american elm,1,5,6,seedling,<1,3
+756,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,american elm,1,5,6,seedling,<1,3
+757,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,american elm,1,5,6,seedling,<1,3
+758,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,american elm,1,5,6,seedling,<1,3
+759,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,american elm,1,5,6,seedling,<1,3
+760,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,american elm,1,5,6,seedling,<1,3
+761,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,american elm,1,5,6,seedling,<1,3
+762,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,american elm,1,5,6,seedling,<1,3
+763,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,american elm,1,5,6,seedling,<1,3
+764,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,american elm,1,5,6,seedling,<1,3
+244,11-Oct-17,South Hammond,Pine,3,6,Q3,45,basswood,1,8.9,7.5,seedling,0.2,SH3Q3
+388,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,basswood,1,6,7,seedling,NA,2
+421,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,basswood,1,6,7,seedling,NA,2
+450,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,basswood,1,NA,NA,seedling,<1,3
+489,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,basswood,1,NA,NA,seedling,<1,3
+490,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,basswood,1,NA,NA,seedling,<1,3
+591,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,basswood,1,19,20,seedling,<1,1
+283,11-Oct-17,South Hammond,Pine,3,6,Q4,82,big toothed aspen,1,2,8.1,seedling,0.2,SH3Q4
+67,20-Sep-17,Donnerville,Deciduous,1,1,Q2,1,black cherry,1,3.3,7,seedling,3.2,Don1Q2
+72,20-Sep-17,Donnerville,Deciduous,1,1,Q3,4,black cherry,1,4.4,3.7,seedling,2.2,Don1Q3
+101,20-Sep-17,Donnerville,Deciduous,2,2,Q2,8,black cherry,1,4.1,8.2,seedling,2,Don2Q2
+102,20-Sep-17,Donnerville,Deciduous,2,2,Q2,9,black cherry,1,4.1,8.2,seedling,4.1,Don2Q2
+103,20-Sep-17,Donnerville,Deciduous,2,2,Q2,11,black cherry,1,4.1,8.2,seedling,4.3,Don2Q2
+104,20-Sep-17,Donnerville,Deciduous,2,2,Q2,10,black cherry,1,4.1,8.2,seedling,4.4,Don2Q2
+112,20-Sep-17,Donnerville,Deciduous,2,2,Q3,14,black cherry,1,5.6,1.3,seedling,1.5,Don2Q3
+128,20-Sep-17,Donnerville,Deciduous,2,2,Q4,17,black cherry,1,5.7,4.7,seedling,1.7,Don2Q4
+129,20-Sep-17,Donnerville,Deciduous,2,2,Q4,19,black cherry,1,5.7,4.7,seedling,4.7,Don2Q4
+130,20-Sep-17,Donnerville,Deciduous,2,2,Q4,20,black cherry,1,5.7,4.7,seedling,4.6,Don2Q4
+131,20-Sep-17,Donnerville,Deciduous,2,2,Q4,18,black cherry,1,5.7,4.7,seedling,4.7,Don2Q4
+176,4-Oct-17,South Hammond,Pine,1,4,Q2,28,black cherry,1,4,5,seedling,5,SH1Q2
+667,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,box elder,1,18,19,seedling,<1,1
+668,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,box elder,1,18,19,seedling,<1,1
+693,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,box elder,1,18,19,seedling,<1,1
+694,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,box elder,1,18,19,seedling,<1,1
+752,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,box elder,1,5,6,seedling,<1,3
+66,20-Sep-17,Donnerville,Deciduous,1,1,Q2,2,choke cherry,1,3.3,7,seedling,2.1,Don1Q2
+74,20-Sep-17,Donnerville,Deciduous,1,1,Q3,6,choke cherry,1,4.4,3.7,seedling,2.8,Don1Q3
+185,4-Oct-17,South Hammond,Pine,1,4,Q3,30,choke cherry,1,6.7,1.6,seedling,7,SH1Q3
+230,11-Oct-17,South Hammond,Pine,3,6,Q2,40,choke cherry,1,8.5,2.1,seedling,0.7,SH3Q2
+239,11-Oct-17,South Hammond,Pine,3,6,Q3,56,choke cherry,1,8.9,7.5,seedling,0.4,SH3Q3
+242,11-Oct-17,South Hammond,Pine,3,6,Q3,47,choke cherry,1,8.9,7.5,seedling,0.4,SH3Q3
+243,11-Oct-17,South Hammond,Pine,3,6,Q3,43,choke cherry,1,8.9,7.5,seedling,0.4,SH3Q3
+245,11-Oct-17,South Hammond,Pine,3,6,Q3,48,choke cherry,1,8.9,7.5,seedling,0.4,SH3Q3
+248,11-Oct-17,South Hammond,Pine,3,6,Q3,55,choke cherry,1,8.9,7.5,seedling,0.4,SH3Q3
+249,11-Oct-17,South Hammond,Pine,3,6,Q3,46,choke cherry,1,8.9,7.5,seedling,0.9,SH3Q3
+250,11-Oct-17,South Hammond,Pine,3,6,Q3,57,choke cherry,1,8.9,7.5,seedling,0.5,SH3Q3
+252,11-Oct-17,South Hammond,Pine,3,6,Q3,42,choke cherry,1,8.9,7.5,seedling,0.7,SH3Q3
+253,11-Oct-17,South Hammond,Pine,3,6,Q3,44,choke cherry,1,8.9,7.5,seedling,0.3,SH3Q3
+265,11-Oct-17,South Hammond,Pine,3,6,Q4,83,choke cherry,1,2,8.1,seedling,0.2,SH3Q4
+273,11-Oct-17,South Hammond,Pine,3,6,Q4,72,choke cherry,1,2,8.1,seedling,0.3,SH3Q4
+275,11-Oct-17,South Hammond,Pine,3,6,Q4,84,choke cherry,1,2,8.1,seedling,0.3,SH3Q4
+281,11-Oct-17,South Hammond,Pine,3,6,Q4,80,choke cherry,1,2,8.1,seedling,0.3,SH3Q4
+282,11-Oct-17,South Hammond,Pine,3,6,Q4,81,choke cherry,1,2,8.1,seedling,0.9,SH3Q4
+449,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,choke cherry,1,6,7,seedling,NA,2
+295,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,hornbeam,1,6,7,seedling,NA,2
+371,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,hornbeam,1,6,7,seedling,NA,2
+379,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,hornbeam,1,6,7,seedling,NA,2
+491,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,hornbeam,1,NA,NA,seedling,<1,3
+492,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,hornbeam,1,NA,NA,seedling,<1,3
+31,1-Nov-17,Degrasse,Pine,2,11,Q3,129,red maple,1,5.2,7.4,seedling,0.1,P2Q3
+237,11-Oct-17,South Hammond,Pine,3,6,Q3,60,red maple,1,8.9,7.5,seedling,0.3,SH3Q3
+240,11-Oct-17,South Hammond,Pine,3,6,Q3,59,red maple,1,8.9,7.5,seedling,0.5,SH3Q3
+347,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,red maple,1,12,13,seedling,0.08,1
+348,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,red maple,1,12,13,seedling,0.05,1
+355,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,red maple,1,12,13,seedling,0.05,1
+356,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,red maple,1,12,13,seedling,0.05,1
+361,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,red maple,1,6,7,seedling,NA,2
+390,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,red maple,1,6,7,seedling,NA,2
+401,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,red maple,1,6,7,seedling,NA,2
+402,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,red maple,1,6,7,seedling,NA,2
+447,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,red maple,1,6,7,seedling,NA,2
+448,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,red maple,1,6,7,seedling,NA,2
+460,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,red maple,1,NA,NA,seedling,<1,3
+461,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,red maple,1,NA,NA,seedling,<1,3
+487,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,red maple,1,NA,NA,seedling,<1,3
+488,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,red maple,1,NA,NA,seedling,<1,3
+525,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,red maple,1,NA,NA,seedling,<1,3
+526,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,red maple,1,NA,NA,seedling,<1,3
+529,16-Oct-19,Whipoorwill,Pine,2,14,Q2,NA,red maple,1,17,18,seedling,<1,1
+532,16-Oct-19,Whipoorwill,Pine,2,14,Q3,NA,red maple,1,17,18,seedling,<1,2
+533,16-Oct-19,Whipoorwill,Pine,2,14,Q3,NA,red maple,1,17,18,seedling,<1,2
+554,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q4,NA,red maple,1,4,5,seedling,<1,3
+555,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q4,NA,red maple,1,4,5,seedling,<1,3
+564,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+565,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+566,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+567,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+569,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+570,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+571,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+572,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+573,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+574,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+575,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+576,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+577,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+578,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+579,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+580,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+581,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+582,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+583,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+584,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,NA,red maple,1,2,3,seedling,<1,3
+682,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,red maple,1,18,19,seedling,<1,1
+184,4-Oct-17,South Hammond,Pine,1,4,Q3,29,red oak,1,6.7,1.6,seedling,5.5,SH1Q3
+193,4-Oct-17,South Hammond,Pine,1,4,Q4,31,red oak,1,5.1,2.7,seedling,7.5,SH1Q4
+287,11-Oct-17,South Hammond,Pine,3,6,Q4,75,red oak,1,2,8.1,seedling,0.3,SH3Q4
+19,1-Nov-17,Degrasse,Pine,2,11,Q2,124,red pine,1,7.4,9.5,seedling,0.2,P2Q2
+20,1-Nov-17,Degrasse,Pine,2,11,Q2,125,red pine,1,7.4,9.5,seedling,0.2,P2Q2
+21,1-Nov-17,Degrasse,Pine,2,11,Q2,127,red pine,1,7.4,9.5,seedling,0.2,P2Q2
+22,1-Nov-17,Degrasse,Pine,2,11,Q2,126,red pine,1,7.4,9.5,seedling,0.2,P2Q2
+23,1-Nov-17,Degrasse,Pine,2,11,Q2,128,red pine,1,7.4,9.5,seedling,0.3,P2Q2
+30,1-Nov-17,Degrasse,Pine,2,11,Q3,130,red pine,1,5.2,7.4,seedling,1.6,P2Q3
+35,1-Nov-17,Degrasse,Pine,2,11,Q4,131,red pine,1,2.5,5.8,seedling,0.2,P2Q4
+36,1-Nov-17,Degrasse,Pine,2,11,Q4,135,red pine,1,2.5,5.8,seedling,0.2,P2Q4
+37,1-Nov-17,Degrasse,Pine,2,11,Q4,133,red pine,1,2.5,5.8,seedling,0.2,P2Q4
+38,1-Nov-17,Degrasse,Pine,2,11,Q4,134,red pine,1,2.5,5.8,seedling,0.2,P2Q4
+39,1-Nov-17,Degrasse,Pine,2,11,Q4,136,red pine,1,2.5,5.8,seedling,0.2,P2Q4
+40,1-Nov-17,Degrasse,Pine,2,11,Q4,137,red pine,1,2.5,5.8,seedling,0.2,P2Q4
+41,1-Nov-17,Degrasse,Pine,2,11,Q4,132,red pine,1,2.5,5.8,seedling,1,P2Q4
+209,4-Oct-17,South Hammond,Pine,2,5,Q2,34,shagbark hickory,1,2.4,7.7,seedling,4.7,SH2Q2
+325,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,spruce,1,12,13,seedling,0.3,1
+326,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,spruce,1,12,13,seedling,0.3,1
+85,20-Sep-17,Donnerville,Deciduous,1,1,Q4,7,striped maple,1,9.4,7.6,seedling,3.3,Don1Q4
+151,27-Sep-17,Donnerville,Deciduous,3,3,Q3,23,striped maple,1,0.2,6.7,seedling,0.4,Don3Q3
+266,11-Oct-17,South Hammond,Pine,3,6,Q4,66,sugar maple,1,2,8.1,seedling,0.2,SH3Q4
+267,11-Oct-17,South Hammond,Pine,3,6,Q4,64,sugar maple,1,2,8.1,seedling,0.4,SH3Q4
+268,11-Oct-17,South Hammond,Pine,3,6,Q4,65,sugar maple,1,2,8.1,seedling,0.3,SH3Q4
+269,11-Oct-17,South Hammond,Pine,3,6,Q4,67,sugar maple,1,2,8.1,seedling,0.2,SH3Q4
+270,11-Oct-17,South Hammond,Pine,3,6,Q4,68,sugar maple,1,2,8.1,seedling,0.4,SH3Q4
+271,11-Oct-17,South Hammond,Pine,3,6,Q4,69,sugar maple,1,2,8.1,seedling,0.3,SH3Q4
+272,11-Oct-17,South Hammond,Pine,3,6,Q4,71,sugar maple,1,2,8.1,seedling,0.3,SH3Q4
+274,11-Oct-17,South Hammond,Pine,3,6,Q4,73,sugar maple,1,2,8.1,seedling,0.4,SH3Q4
+276,11-Oct-17,South Hammond,Pine,3,6,Q4,63,sugar maple,1,2,8.1,seedling,0.5,SH3Q4
+277,11-Oct-17,South Hammond,Pine,3,6,Q4,76,sugar maple,1,2,8.1,seedling,0.3,SH3Q4
+278,11-Oct-17,South Hammond,Pine,3,6,Q4,77,sugar maple,1,2,8.1,seedling,0.5,SH3Q4
+279,11-Oct-17,South Hammond,Pine,3,6,Q4,78,sugar maple,1,2,8.1,seedling,0.5,SH3Q4
+280,11-Oct-17,South Hammond,Pine,3,6,Q4,79,sugar maple,1,2,8.1,seedling,0.4,SH3Q4
+284,11-Oct-17,South Hammond,Pine,3,6,Q4,62,sugar maple,1,2,8.1,seedling,0.3,SH3Q4
+285,11-Oct-17,South Hammond,Pine,3,6,Q4,70,sugar maple,1,2,8.1,seedling,0.4,SH3Q4
+286,11-Oct-17,South Hammond,Pine,3,6,Q4,74,sugar maple,1,2,8.1,seedling,0.3,SH3Q4
+324,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,1,1
+327,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.3,1
+329,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.5,1
+330,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.1,1
+331,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.1,1
+332,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.08,1
+335,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.5,1
+337,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.2,1
+338,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.1,1
+342,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.2,1
+343,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.1,1
+345,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.1,1
+346,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.05,1
+349,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.04,1
+350,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,<1,1
+351,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,<1,1
+352,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,<1,1
+353,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,<1,1
+354,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.05,1
+357,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.03,1
+358,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.05,1
+359,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,sugar maple,1,12,13,seedling,0.03,1
+362,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+363,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+364,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+365,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+368,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+369,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+370,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+372,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+373,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+374,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+375,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+376,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+377,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+378,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+380,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+381,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+382,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+383,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+384,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+385,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+386,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+391,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+392,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+393,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+394,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+395,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+396,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+397,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+398,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+399,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+400,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+403,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+404,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+405,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+406,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+407,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+408,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+409,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+410,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+411,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+412,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+413,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+414,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+415,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+416,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+417,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+418,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+419,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+420,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+423,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+424,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+425,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+426,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+427,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+429,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+430,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+431,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+432,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+433,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+434,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+435,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+436,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+437,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+438,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+439,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+440,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+441,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+442,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+443,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+444,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+445,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+446,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,sugar maple,1,6,7,seedling,NA,2
+451,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+452,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+453,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+455,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+456,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+457,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+458,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+464,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+465,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+466,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+467,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+468,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+469,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+470,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+471,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+472,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+473,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+474,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+475,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+476,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+477,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+478,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+479,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+480,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+481,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+482,NA,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+483,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+484,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+485,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+486,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+493,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+494,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+495,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+496,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+497,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+498,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+499,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+500,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+501,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+502,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+503,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+504,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+505,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+506,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+507,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+508,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+509,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+510,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+511,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+512,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+513,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+515,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+516,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+517,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+518,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+519,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+520,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+521,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+522,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+523,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+524,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,sugar maple,1,NA,NA,seedling,<1,3
+534,16-Oct-19,Whipoorwill,Pine,2,14,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+598,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,sugar maple,1,19,20,seedling,<1,1
+611,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,sugar maple,1,18,19,seedling,<1,2
+612,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,sugar maple,1,18,19,seedling,<1,2
+613,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,sugar maple,1,18,19,seedling,<1,2
+619,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,sugar maple,1,18,19,seedling,<1,2
+630,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,sugar maple,1,6,7,seedling,<1,3
+632,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,sugar maple,1,6,7,seedling,<1,3
+633,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,sugar maple,1,6,7,seedling,<1,3
+636,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,sugar maple,1,6,7,seedling,<1,3
+637,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,NA,sugar maple,1,6,7,seedling,<1,3
+643,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+644,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+645,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+646,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+647,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+656,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+657,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+658,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+659,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+660,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+661,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+662,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+663,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+664,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+665,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+666,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+677,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+678,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+679,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+680,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+681,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+695,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+696,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+697,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+698,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+699,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+700,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+701,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,sugar maple,1,18,19,seedling,<1,1
+709,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+710,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+711,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+712,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+713,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+714,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+715,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+716,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+717,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+720,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,sugar maple,1,17,18,seedling,<1,2
+725,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+726,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+727,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+728,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+729,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+730,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+731,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+732,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+733,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+734,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+735,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+736,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+737,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+738,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+739,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+740,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+741,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+742,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+743,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+744,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+745,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+746,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+747,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+748,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+749,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+750,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+751,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,sugar maple,1,5,6,seedling,<1,3
+238,11-Oct-17,South Hammond,Pine,3,6,Q3,49,white ash,1,8.9,7.5,seedling,0.2,SH3Q3
+241,11-Oct-17,South Hammond,Pine,3,6,Q3,50,white ash,1,8.9,7.5,seedling,0.5,SH3Q3
+246,11-Oct-17,South Hammond,Pine,3,6,Q3,51,white ash,1,8.9,7.5,seedling,0.4,SH3Q3
+247,11-Oct-17,South Hammond,Pine,3,6,Q3,53,white ash,1,8.9,7.5,seedling,0.9,SH3Q3
+251,11-Oct-17,South Hammond,Pine,3,6,Q3,58,white ash,1,8.9,7.5,seedling,0.5,SH3Q3
+254,11-Oct-17,South Hammond,Pine,3,6,Q3,52,white ash,1,8.9,7.5,seedling,0.5,SH3Q3
+293,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,white ash,1,6,7,seedling,NA,2
+294,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,white ash,1,6,7,seedling,NA,2
+328,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,white ash,1,12,13,seedling,0.4,1
+333,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,white ash,1,12,13,seedling,0.3,1
+334,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,white ash,1,12,13,seedling,0.5,1
+339,14-Sep-19,Whipoorwill,Pine,1,13,Q2,NA,white ash,1,12,13,seedling,0.1,1
+387,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,white ash,1,6,7,seedling,NA,2
+459,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,white ash,1,NA,NA,seedling,<1,3
+514,14-Sep-19,Whipoorwill,Pine,1,13,Q3,NA,white ash,1,NA,NA,seedling,<1,3
+538,16-Oct-19,Whipoorwill,Pine,2,14,Q4,NA,white ash,1,5,6,seedling,<1,3
+539,16-Oct-19,Whipoorwill,Pine,2,14,Q4,NA,white ash,1,5,6,seedling,<1,3
+597,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,white ash,1,19,20,seedling,<1,1
+603,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,white ash,1,19,20,seedling,<1,1
+608,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,NA,white ash,1,19,20,seedling,<1,1
+609,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,white ash,1,18,19,seedling,<1,2
+610,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,white ash,1,18,19,seedling,<1,2
+629,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,NA,white ash,1,18,19,seedling,<1,2
+655,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,white ash,1,18,19,seedling,<1,1
+692,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,NA,white ash,1,18,19,seedling,<1,1
+707,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,white ash,1,17,18,seedling,<1,2
+708,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,white ash,1,17,18,seedling,<1,2
+718,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,white ash,1,17,18,seedling,<1,2
+719,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,NA,white ash,1,17,18,seedling,<1,2
+753,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,white ash,1,5,6,seedling,<1,3
+754,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,NA,white ash,1,5,6,seedling,<1,3
+192,4-Oct-17,South Hammond,Pine,1,4,Q4,32,white oak,1,5.1,2.7,seedling,9.5,SH1Q4
+255,11-Oct-17,South Hammond,Pine,3,6,Q3,54,white oak,1,8.9,7.5,seedling,0.5,SH3Q3
+11,1-Nov-17,Degrasse,Pine,1,10,Q4,123,white pine,1,9.6,3.3,seedling,2,P1Q4
+57,1-Nov-17,Degrasse,Pine,3,12,Q4,140,white pine,1,2.6,3.9,seedling,1.2,P3Q4
+221,4-Oct-17,South Hammond,Pine,2,5,Q4,37,white pine,1,2,7.9,seedling,3.5,SH2Q4
+360,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,white pine,1,6,7,seedling,NA,2
+366,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,white pine,1,6,7,seedling,NA,2
+367,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,white pine,1,6,7,seedling,NA,2
+389,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,white pine,1,6,7,seedling,NA,2
+428,14-Sep-19,Whipoorwill,Pine,1,13,Q4,NA,white pine,1,6,7,seedling,NA,2
+78,20-Sep-17,Donnerville,Deciduous,1,1,Q3,19,american beech,13.5,,,tree,,
+94,27-Sep,Donnerville,Deciduous,2,2,Q1,28,american beech,12,9.5,10,tree,4.5,
+96,27-Sep-17,Donnerville,Deciduous,2,2,Q1,27,american beech,13.3,2.1,0.9,tree,8,
+120,27-Sep-17,Donnerville,Deciduous,2,2,Q3,44,american beech,15.2,,,tree,,
+121,27-Sep-17,Donnerville,Deciduous,2,2,Q3,54,american beech,15.3,,,tree,,
+122,27-Sep-17,Donnerville,Deciduous,2,2,Q3,51,american beech,15.7,,,tree,,
+123,27-Sep-17,Donnerville,Deciduous,2,2,Q3,52,american beech,17.5,,,tree,,
+125,27-Sep-17,Donnerville,Deciduous,2,2,Q3,46,american beech,20.5,,,tree,,
+127,27-Sep-17,Donnerville,Deciduous,2,2,Q3,53,american beech,24,,,tree,,
+155,27-Sep-17,Donnerville,Deciduous,3,3,Q3,74,american beech,16.3,,,tree,,
+158,27-Sep-17,Donnerville,Deciduous,3,3,Q4,78,american beech,10.5,,,tree,,
+159,27-Sep-17,Donnerville,Deciduous,3,3,Q4,79,american beech,13.4,,,tree,,
+804,16-Oct-19,Whipoorwill,Pine,2,14,Q2,2,american beech,15.7,15,4,tree,NA,NA
+805,16-Oct-19,Whipoorwill,Pine,2,14,Q2,3,american beech,10.9,14,5,tree,NA,NA
+808,16-Oct-19,Whipoorwill,Pine,2,14,Q2,6,american beech,12.8,12,4,tree,NA,NA
+836,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,2,american beech,10.5,14,6,tree,NA,NA
+840,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,6,american beech,15.4,12,0,tree,NA,NA
+842,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,1,american beech,18.4,NA,NA,tree,NA,NA
+844,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,4,american beech,11.9,NA,NA,tree,NA,NA
+847,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,9,american beech,10.7,NA,NA,tree,NA,NA
+849,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q4,2,american beech,21.3,NA,NA,tree,NA,NA
+854,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q1,4,american beech,14.5,1,10,tree,NA,NA
+855,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q1,5,american beech,15.9,4,7,tree,NA,NA
+857,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q1,7,american beech,17.7,7,4,tree,NA,NA
+859,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q1,9,american beech,11.4,9,1,tree,NA,NA
+864,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,1,american beech,19.6,NA,NA,tree,NA,NA
+874,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,1,american beech,19.9,NA,NA,tree,NA,NA
+876,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,3,american beech,28.3,NA,NA,tree,NA,NA
+877,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,4,american beech,12.7,NA,NA,tree,NA,NA
+793,14-Sep-19,Whipoorwill,Pine,1,13,Q4,1,american elm,21,NA,NA,tree,NA,NA
+843,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,3,american elm,23,NA,NA,tree,NA,NA
+878,19-Oct-19,Beaver Creek,Deciduous,1,17,Q1,1,american elm,37.5,4,0,tree,NA,NA
+879,19-Oct-19,Beaver Creek,Deciduous,1,17,Q1,2,american elm,25.9,2,4,tree,NA,NA
+880,19-Oct-19,Beaver Creek,Deciduous,1,17,Q1,3,american elm,13.3,3,6,tree,NA,NA
+884,19-Oct-19,Beaver Creek,Deciduous,1,17,Q1,7,american elm,14.4,9,8,tree,NA,NA
+885,19-Oct-19,Beaver Creek,Deciduous,1,17,Q1,8,american elm,22.3,6,9,tree,NA,NA
+895,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,1,american elm,21.1,NA,NA,tree,NA,NA
+896,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,2,american elm,10.4,NA,NA,tree,NA,NA
+897,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,3,american elm,10.1,NA,NA,tree,NA,NA
+900,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,6,american elm,10.2,NA,NA,tree,NA,NA
+902,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,2,american elm,12.2,NA,NA,tree,NA,NA
+911,19-Oct-19,Beaver Creek,Deciduous,2,18,Q1,5,american elm,12.9,5,5,tree,NA,NA
+913,19-Oct-19,Beaver Creek,Deciduous,2,18,Q1,7,american elm,15.3,2,10,tree,NA,NA
+915,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,2,american elm,13.2,16,10,tree,NA,NA
+917,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,1,american elm,13.6,NA,NA,tree,NA,NA
+918,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,2,american elm,13,NA,NA,tree,NA,NA
+919,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,3,american elm,13.2,NA,NA,tree,NA,NA
+920,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,4,american elm,11.5,NA,NA,tree,NA,NA
+921,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,5,american elm,17.4,NA,NA,tree,NA,NA
+922,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,6,american elm,13.9,NA,NA,tree,NA,NA
+924,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,8,american elm,13.5,NA,NA,tree,NA,NA
+925,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,9,american elm,18.2,NA,NA,tree,NA,NA
+926,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,10,american elm,15.1,NA,NA,tree,NA,NA
+927,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,11,american elm,21.3,NA,NA,tree,NA,NA
+928,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,1,american elm,25.5,NA,NA,tree,NA,NA
+930,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,3,american elm,10,NA,NA,tree,NA,NA
+931,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,4,american elm,14,NA,NA,tree,NA,NA
+934,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,7,american elm,10.1,NA,NA,tree,NA,NA
+82,20-Sep-17,Donnerville,Deciduous,1,1,Q3,18,big toothed aspen,24,,,tree,,
+83,20-Sep-17,Donnerville,Deciduous,1,1,Q3,13,big toothed aspen,32.5,,,tree,,
+84,20-Sep-17,Donnerville,Deciduous,1,1,Q3,16,big toothed aspen,36,,,tree,,
+91,20-Sep-17,Donnerville,Deciduous,1,1,Q4,20,big toothed aspen,22,,,tree,,
+99,27-Sep-17,Donnerville,Deciduous,2,2,Q1,35,black cherry,35,9.5,8,tree,16,
+109,27-Sep,Donnerville,Deciduous,2,2,Q2,40,black cherry,23.7,,,tree,11,
+110,27-Sep,Donnerville,Deciduous,2,2,Q2,41,black cherry,26.4,0,15.2,tree,14,
+116,27-Sep-17,Donnerville,Deciduous,2,2,Q3,49,black cherry,10.5,,,tree,,
+118,27-Sep-17,Donnerville,Deciduous,2,2,Q3,43,black cherry,12.5,,,tree,,
+166,4-Oct-17,South Hammond,Pine,1,4,Q1,87,black cherry,15.5,5,10,tree,11,
+861,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,1,black cherry,17.8,20,3,tree,NA,NA
+86,20-Sep-17,Donnerville,Deciduous,1,1,Q4,23,catscratch,10,,,tree,,
+160,27-Sep-17,Donnerville,Deciduous,3,3,Q4,77,catscratch,14.8,,,tree,,
+179,4-Oct-17,South Hammond,Pine,1,4,Q2,135,catscratch,12.3,4.5,0.5,tree,9.1,
+180,4-Oct-17,South Hammond,Pine,1,4,Q2,134,catscratch,14.3,2.3,3,tree,8,
+227,11-Oct-17,South Hammond,Pine,3,6,Q1,117,catscratch,10.5,3,9,tree,8.5,
+186,4-Oct-17,South Hammond,Pine,1,4,Q3,141,choke cherry,10.1,,,tree,,
+197,4-Oct-17,South Hammond,Pine,1,4,Q4,154,choke cherry,16,,,tree,,
+290,11-Oct-17,South Hammond,Pine,3,6,Q4,133,choke cherry,21.4,,,tree,,
+97,27-Sep,Donnerville,Deciduous,2,2,Q1,31,hornbeam,15,5.6,1,tree,4,
+207,4-Oct-17,South Hammond,Pine,2,5,Q1,99,quaking aspen,34.2,1,9,tree,8.1,
+8,1-Nov-17,Degrasse,Pine,1,10,Q3,162,red maple,17.1,,,tree,,
+62,20-Sep-17,Donnerville,Deciduous,1,1,Q1,5,red maple,16.5,0.2,6.6,tree,14.5,
+77,20-Sep-17,Donnerville,Deciduous,1,1,Q3,14,red maple,12.5,,,tree,,
+88,20-Sep-17,Donnerville,Deciduous,1,1,Q4,25,red maple,15.2,,,tree,,
+89,20-Sep-17,Donnerville,Deciduous,1,1,Q4,22,red maple,16.5,,,tree,,
+90,20-Sep-17,Donnerville,Deciduous,1,1,Q4,26,red maple,17.5,,,tree,,
+105,27-Sep,Donnerville,Deciduous,2,2,Q2,37,red maple,12.1,8.1,0.6,tree,10,
+108,27-Sep,Donnerville,Deciduous,2,2,Q2,39,red maple,19.5,7.4,11.3,tree,12.6,
+126,27-Sep-17,Donnerville,Deciduous,2,2,Q3,45,red maple,22.9,,,tree,,
+137,27-Sep-17,Donnerville,Deciduous,2,2,Q4,61,red maple,32,,,tree,,
+142,27-Sep-17,Donnerville,Deciduous,3,3,Q1,63,red maple,28.6,0.5,8,tree,10.5,
+149,27-Sep-17,Donnerville,Deciduous,3,3,Q2,73,red maple,19.6,0,10,tree,14.1,
+202,4-Oct-17,South Hammond,Pine,2,5,Q1,96,red maple,10,4,4,tree,9,
+203,4-Oct-17,South Hammond,Pine,2,5,Q1,98,red maple,13.3,4,9.6,tree,8,
+206,4-Oct-17,South Hammond,Pine,2,5,Q1,100,red maple,31.9,8,10,tree,8.5,
+220,4-Oct-17,South Hammond,Pine,2,5,Q3,106,red maple,43.5,,,tree,,
+767,14-Sep-19,Whipoorwill,Pine,1,13,Q1,3,red maple,15.2,3.8,3.8,tree,NA,NA
+769,14-Sep-19,Whipoorwill,Pine,1,13,Q1,5,red maple,20,9,3,tree,NA,NA
+770,14-Sep-19,Whipoorwill,Pine,1,13,Q1,6,red maple,10.7,8.5,6,tree,NA,NA
+773,14-Sep-19,Whipoorwill,Pine,1,13,Q1,9,red maple,20.2,3.5,7,tree,NA,NA
+774,14-Sep-19,Whipoorwill,Pine,1,13,Q1,10,red maple,13,3,9,tree,NA,NA
+778,14-Sep-19,Whipoorwill,Pine,1,13,Q2,3,red maple,12,14,7.2,tree,NA,NA
+779,14-Sep-19,Whipoorwill,Pine,1,13,Q2,4,red maple,10.4,19.5,8,tree,NA,NA
+781,14-Sep-19,Whipoorwill,Pine,1,13,Q2,6,red maple,16.5,18,8.5,tree,NA,NA
+809,16-Oct-19,Whipoorwill,Pine,2,14,Q2,7,red maple,11.2,10,9,tree,NA,NA
+810,16-Oct-19,Whipoorwill,Pine,2,14,Q3,1,red maple,11.6,NA,NA,tree,NA,NA
+813,16-Oct-19,Whipoorwill,Pine,2,14,Q3,5,red maple,23.4,NA,NA,tree,NA,NA
+814,16-Oct-19,Whipoorwill,Pine,2,14,Q3,6,red maple,25.1,NA,NA,tree,NA,NA
+815,16-Oct-19,Whipoorwill,Pine,2,14,Q3,7,red maple,18.4,NA,NA,tree,NA,NA
+816,16-Oct-19,Whipoorwill,Pine,2,14,Q3,8,red maple,17.9,NA,NA,tree,NA,NA
+823,16-Oct-19,Whipoorwill,Pine,2,14,Q4,5,red maple,18.1,NA,NA,tree,NA,NA
+831,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q1,2,red maple,11.3,1,6,tree,NA,NA
+833,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q1,4,red maple,10.2,4,10,tree,NA,NA
+837,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,3,red maple,11.3,14,2,tree,NA,NA
+838,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,4,red maple,11.2,18,4,tree,NA,NA
+846,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,8,red maple,34.2,NA,NA,tree,NA,NA
+848,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q4,1,red maple,36,NA,NA,tree,NA,NA
+850,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q4,3,red maple,42.2,NA,NA,tree,NA,NA
+853,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q1,3,red maple,12.6,2,8,tree,NA,NA
+860,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q1,10,red maple,23.8,9,6,tree,NA,NA
+862,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,2,red maple,24,19,4,tree,NA,NA
+867,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,4,red maple,10.5,NA,NA,tree,NA,NA
+868,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,5,red maple,16.4,NA,NA,tree,NA,NA
+869,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,6,red maple,11,NA,NA,tree,NA,NA
+872,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,9,red maple,15.2,NA,NA,tree,NA,NA
+873,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,10,red maple,11.6,NA,NA,tree,NA,NA
+169,4-Oct-17,South Hammond,Pine,1,4,Q1,89,red oak,30.5,6.5,5,tree,,
+194,4-Oct-17,South Hammond,Pine,1,4,Q4,150,red oak,10,,,tree,,
+199,4-Oct-17,South Hammond,Pine,1,4,Q4,147,red oak,25.4,,,tree,,
+200,4-Oct-17,South Hammond,Pine,1,4,Q4,153,red oak,27.3,,,tree,,
+211,4-Oct-17,South Hammond,Pine,2,5,Q2,104,red oak,10.9,7,5,tree,5,
+212,4-Oct-17,South Hammond,Pine,2,5,Q2,103,red oak,11.5,3.6,3.5,tree,6,
+214,4-Oct-17,South Hammond,Pine,2,5,Q2,105,red oak,20,8.5,4.9,tree,9,
+215,4-Oct-17,South Hammond,Pine,2,5,Q2,102,red oak,27.1,5.3,4,tree,11,
+216,4-Oct-17,South Hammond,Pine,2,5,Q3,108,red oak,13.4,,,tree,,
+217,4-Oct-17,South Hammond,Pine,2,5,Q3,109,red oak,13.8,,,tree,,
+219,4-Oct-17,South Hammond,Pine,2,5,Q3,107,red oak,20,,,tree,,
+223,4-Oct-17,South Hammond,Pine,2,5,Q4,112,red oak,10.8,,,tree,,
+224,4-Oct-17,South Hammond,Pine,2,5,Q4,113,red oak,11.5,,,tree,,
+225,4-Oct-17,South Hammond,Pine,2,5,Q4,114,red oak,15.2,,,tree,,
+226,4-Oct-17,South Hammond,Pine,2,5,Q4,111,red oak,17.5,,,tree,,
+234,11-Oct-17,South Hammond,Pine,3,6,Q2,121,red oak,16.2,7,5,tree,18,
+235,11-Oct-17,South Hammond,Pine,3,6,Q2,119,red oak,19.8,4,4,tree,20,
+236,11-Oct-17,South Hammond,Pine,3,6,Q2,118,red oak,36.5,0.5,5,tree,20,
+257,11-Oct-17,South Hammond,Pine,3,6,Q3,126,red oak,11,,,tree,,
+258,11-Oct-17,South Hammond,Pine,3,6,Q3,125,red oak,12.5,,,tree,,
+259,11-Oct-17,South Hammond,Pine,3,6,Q3,124,red oak,16.3,,,tree,,
+263,11-Oct-17,South Hammond,Pine,3,6,Q3,128,red oak,33.7,,,tree,,
+264,11-Oct-17,South Hammond,Pine,3,6,Q3,129,red oak,37.1,,,tree,,
+291,11-Oct-17,South Hammond,Pine,3,6,Q4,132,red oak,38.6,,,tree,,
+3,1-Nov-17,Degrasse,Pine,1,10,Q1,158,red pine,38,5,5,tree,20.5,
+4,1-Nov-17,Degrasse,Pine,1,10,Q1,156,red pine,42.7,1,1,tree,21.5,
+6,1-Nov-17,Degrasse,Pine,1,10,Q2,161,red pine,37.8,3,9,tree,21,
+7,1-Nov-17,Degrasse,Pine,1,10,Q2,160,red pine,38,5,4,tree,20,
+9,1-Nov-17,Degrasse,Pine,1,10,Q3,164,red pine,33.2,,,tree,,
+10,1-Nov-17,Degrasse,Pine,1,10,Q3,163,red pine,36.8,,,tree,,
+12,1-Nov-17,Degrasse,Pine,1,10,Q4,167,red pine,34,,,tree,,
+13,1-Nov-17,Degrasse,Pine,1,10,Q4,165,red pine,34.4,,,tree,,
+14,1-Nov-17,Degrasse,Pine,1,10,Q4,168,red pine,36,,,tree,,
+15,1-Nov-17,Degrasse,Pine,1,10,Q4,166,red pine,38.9,,,tree,,
+16,1-Nov-17,Degrasse,Pine,2,11,Q1,170,red pine,34.5,4.1,4,tree,19,
+17,1-Nov-17,Degrasse,Pine,2,11,Q1,169,red pine,40.8,2,1,tree,18,
+18,1-Nov-17,Degrasse,Pine,2,11,Q1,171,red pine,42,0.1,8.5,tree,20,
+25,1-Nov-17,Degrasse,Pine,2,11,Q2,173,red pine,35.5,1.5,3,tree,21,
+26,1-Nov-17,Degrasse,Pine,2,11,Q2,176,red pine,37.7,0.1,2.9,tree,21,
+27,1-Nov-17,Degrasse,Pine,2,11,Q2,174,red pine,39.5,5.4,3.9,tree,17,
+28,1-Nov-17,Degrasse,Pine,2,11,Q2,172,red pine,40.2,1.5,10,tree,19,
+29,1-Nov-17,Degrasse,Pine,2,11,Q2,177,red pine,46.2,1,8.5,tree,20,
+32,1-Nov-17,Degrasse,Pine,2,11,Q3,178,red pine,29.5,,,tree,,
+33,1-Nov-17,Degrasse,Pine,2,11,Q3,179,red pine,39.7,,,tree,,
+34,1-Nov-17,Degrasse,Pine,2,11,Q3,180,red pine,40.8,,,tree,,
+42,1-Nov-17,Degrasse,Pine,2,11,Q4,183,red pine,22.1,,,tree,,
+43,1-Nov-17,Degrasse,Pine,2,11,Q4,181,red pine,35.9,,,tree,,
+44,1-Nov-17,Degrasse,Pine,2,11,Q4,182,red pine,54.9,,,tree,,
+46,1-Nov-17,Degrasse,Pine,3,12,Q1,184,red pine,33,0.5,8.5,tree,17,
+47,1-Nov-17,Degrasse,Pine,3,12,Q1,185,red pine,34,8,8,tree,19,
+48,1-Nov-17,Degrasse,Pine,3,12,Q1,186,red pine,43,9,3,tree,17,
+49,1-Nov-17,Degrasse,Pine,3,12,Q2,190,red pine,28,3,5.5,tree,18.5,
+50,1-Nov-17,Degrasse,Pine,3,12,Q2,188,red pine,36,1,1.5,tree,17.5,
+51,1-Nov-17,Degrasse,Pine,3,12,Q2,189,red pine,43,5.5,4,tree,16,
+54,1-Nov-17,Degrasse,Pine,3,12,Q3,195,red pine,37.8,,,tree,,
+55,1-Nov-17,Degrasse,Pine,3,12,Q3,192,red pine,40.8,,,tree,,
+56,1-Nov-17,Degrasse,Pine,3,12,Q3,193,red pine,42.1,,,tree,,
+58,1-Nov-17,Degrasse,Pine,3,12,Q4,196,red pine,36.8,,,tree,,
+59,1-Nov-17,Degrasse,Pine,3,12,Q4,197,red pine,43.5,,,tree,,
+256,11-Oct-17,South Hammond,Pine,3,6,Q3,127,red pine,10.5,,,tree,,
+261,11-Oct-17,South Hammond,Pine,3,6,Q3,123,red pine,20.2,,,tree,,
+765,14-Sep-19,Whipoorwill,Pine,1,13,Q1,1,red pine,26.9,1,1,tree,NA,NA
+766,14-Sep-19,Whipoorwill,Pine,1,13,Q1,2,red pine,29.9,2,2,tree,NA,NA
+768,14-Sep-19,Whipoorwill,Pine,1,13,Q1,4,red pine,29.4,4.2,4,tree,NA,NA
+771,14-Sep-19,Whipoorwill,Pine,1,13,Q1,7,red pine,34.9,8,7,tree,NA,NA
+772,14-Sep-19,Whipoorwill,Pine,1,13,Q1,8,red pine,35.4,4,7,tree,NA,NA
+775,14-Sep-19,Whipoorwill,Pine,1,13,Q1,11,red pine,39.1,1,7,tree,NA,NA
+776,14-Sep-19,Whipoorwill,Pine,1,13,Q2,1,red pine,29.5,12,6,tree,NA,NA
+777,14-Sep-19,Whipoorwill,Pine,1,13,Q2,2,red pine,30.4,14,7,tree,NA,NA
+780,14-Sep-19,Whipoorwill,Pine,1,13,Q2,5,red pine,25.9,19.5,5,tree,NA,NA
+782,14-Sep-19,Whipoorwill,Pine,1,13,Q2,7,red pine,28.5,18,3,tree,NA,NA
+783,14-Sep-19,Whipoorwill,Pine,1,13,Q2,8,red pine,30.6,16,2.9,tree,NA,NA
+803,16-Oct-19,Whipoorwill,Pine,2,14,Q1,7,red pine,18.9,8,5,tree,NA,NA
+830,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q1,1,red pine,44.2,4,4,tree,NA,NA
+832,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q1,3,red pine,45.8,0,6,tree,NA,NA
+834,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q1,6,red pine,44.5,8,10,tree,NA,NA
+835,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,1,red pine,35.1,12,6,tree,NA,NA
+839,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,5,red pine,40.2,18,8,tree,NA,NA
+841,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q2,7,red pine,40.3,12,10,tree,NA,NA
+845,5-Oct-19,Whiskey Flats,Deciduous,1,15,Q3,7,red pine,43.5,NA,NA,tree,NA,NA
+52,1-Nov-17,Degrasse,Pine,3,12,Q3,194,spruce,16.6,,,tree,,
+187,4-Oct-17,South Hammond,Pine,1,4,Q3,145,shagbark hickory,12.5,,,tree,,
+107,27-Sep,Donnerville,Deciduous,2,2,Q2,38,american elm,12.3,,,tree,9,
+60,20-Sep-17,Donnerville,Deciduous,1,1,Q1,3,sugar maple,14.5,4.3,1.6,tree,12,
+61,20-Sep-17,Donnerville,Deciduous,1,1,Q1,6,sugar maple,16.3,0.1,8.8,tree,13,
+63,20-Sep-17,Donnerville,Deciduous,1,1,Q1,2,sugar maple,18.5,4.2,2.3,tree,13.5,
+64,20-Sep-17,Donnerville,Deciduous,1,1,Q1,4,sugar maple,23,6,3.6,tree,15,
+65,20-Sep-17,Donnerville,Deciduous,1,1,Q1,1,sugar maple,24.5,1.8,2,tree,14,
+68,20-Sep-17,Donnerville,Deciduous,1,1,Q2,8,sugar maple,12,9.8,6.1,tree,10.5,
+69,20-Sep-17,Donnerville,Deciduous,1,1,Q2,9,sugar maple,17,0.1,9.2,tree,12.1,
+70,20-Sep-17,Donnerville,Deciduous,1,1,Q2,7,sugar maple,18.5,5.4,7.3,tree,15.5,
+71,20-Sep-17,Donnerville,Deciduous,1,1,Q2,10,sugar maple,74.5,6.5,4.3,tree,16,
+76,20-Sep-17,Donnerville,Deciduous,1,1,Q3,17,sugar maple,12,,,tree,,
+79,20-Sep-17,Donnerville,Deciduous,1,1,Q3,15,sugar maple,15,,,tree,,
+80,20-Sep-17,Donnerville,Deciduous,1,1,Q3,12,sugar maple,16,,,tree,,
+81,20-Sep-17,Donnerville,Deciduous,1,1,Q3,11,sugar maple,22.5,,,tree,,
+87,20-Sep-17,Donnerville,Deciduous,1,1,Q4,21,sugar maple,13,,,tree,,
+92,20-Sep-17,Donnerville,Deciduous,1,1,Q4,24,sugar maple,27,,,tree,,
+100,27-Sep-17,Donnerville,Deciduous,2,2,Q1,33,sugar maple,66,5,6,tree,20,
+124,27-Sep-17,Donnerville,Deciduous,2,2,Q3,50,sugar maple,18.8,,,tree,,
+139,27-Sep-17,Donnerville,Deciduous,3,3,Q1,64,sugar maple,10,8,5.5,tree,9.3,
+140,27-Sep-17,Donnerville,Deciduous,3,3,Q1,65,sugar maple,13,8,5.3,tree,9.3,
+146,27-Sep-17,Donnerville,Deciduous,3,3,Q2,70,sugar maple,11.2,5,6,tree,8,
+147,27-Sep-17,Donnerville,Deciduous,3,3,Q2,72,sugar maple,15.7,1,6,tree,9,
+148,27-Sep-17,Donnerville,Deciduous,3,3,Q2,69,sugar maple,16.7,8,2,tree,13,
+161,27-Sep-17,Donnerville,Deciduous,3,3,Q4,76,sugar maple,32,,,tree,,
+883,19-Oct-19,Beaver Creek,Deciduous,1,17,Q1,6,sugar maple,11.6,9,6,tree,NA,NA
+898,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,4,sugar maple,11.2,NA,NA,tree,NA,NA
+899,19-Oct-19,Beaver Creek,Deciduous,1,17,Q3,5,sugar maple,10.8,NA,NA,tree,NA,NA
+906,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,6,sugar maple,10.1,NA,NA,tree,NA,NA
+907,19-Oct-19,Beaver Creek,Deciduous,2,18,Q1,1,sugar maple,24.2,1,0,tree,NA,NA
+909,19-Oct-19,Beaver Creek,Deciduous,2,18,Q1,3,sugar maple,23.8,5,2,tree,NA,NA
+923,19-Oct-19,Beaver Creek,Deciduous,2,18,Q3,7,sugar maple,12.1,NA,NA,tree,NA,NA
+936,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,9,sugar maple,11,NA,NA,tree,NA,NA
+93,27-Sep-17,Donnerville,Deciduous,2,2,Q1,30,Unknown1,11.5,4.3,3.2,tree,7.7,
+95,27-Sep,Donnerville,Deciduous,2,2,Q1,34,Unknown1,12.5,7.5,1.2,tree,3.5,
+117,27-Sep-17,Donnerville,Deciduous,2,2,Q3,48,Unknown1,10.6,,,tree,,
+119,27-Sep-17,Donnerville,Deciduous,2,2,Q3,47,Unknown1,12.7,,,tree,,
+132,27-Sep-17,Donnerville,Deciduous,2,2,Q4,59,Unknown1,10.1,,,tree,,
+133,27-Sep-17,Donnerville,Deciduous,2,2,Q4,55,Unknown1,11,,,tree,,
+134,27-Sep-17,Donnerville,Deciduous,2,2,Q4,57,Unknown1,14.6,,,tree,,
+135,27-Sep-17,Donnerville,Deciduous,2,2,Q4,58,Unknown1,18,,,tree,,
+136,27-Sep-17,Donnerville,Deciduous,2,2,Q4,60,Unknown1,22.1,,,tree,,
+138,27-Sep-17,Donnerville,Deciduous,2,2,Q4,56,Unknown1,45.9,,,tree,,
+98,27-Sep-17,Donnerville,Deciduous,2,2,Q1,36,white ash,22.5,9.8,1,tree,11.8,
+106,27-Sep,Donnerville,Deciduous,2,2,Q2,42,white ash,12.2,,,tree,8.5,
+213,4-Oct-17,South Hammond,Pine,2,5,Q2,101,white ash,13.3,1.5,1,tree,12,
+262,11-Oct-17,South Hammond,Pine,3,6,Q3,122,white ash,23.9,,,tree,,
+819,16-Oct-19,Whipoorwill,Pine,2,14,Q4,1,white ash,26.4,NA,NA,tree,NA,NA
+881,19-Oct-19,Beaver Creek,Deciduous,1,17,Q1,4,white ash,18.6,4,6,tree,NA,NA
+882,19-Oct-19,Beaver Creek,Deciduous,1,17,Q1,5,white ash,23.3,8,3,tree,NA,NA
+886,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,1,white ash,20.5,10,2,tree,NA,NA
+887,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,2,white ash,14.8,13,2,tree,NA,NA
+888,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,3,white ash,18.8,16,2,tree,NA,NA
+889,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,4,white ash,15.1,1,1,tree,NA,NA
+890,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,5,white ash,18.9,18,4,tree,NA,NA
+891,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,6,white ash,12.2,18,4,tree,NA,NA
+892,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,7,white ash,15.5,18,6,tree,NA,NA
+893,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,8,white ash,33,15,8,tree,NA,NA
+894,19-Oct-19,Beaver Creek,Deciduous,1,17,Q2,9,white ash,12.2,12,8,tree,NA,NA
+901,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,1,white ash,23.9,NA,NA,tree,NA,NA
+903,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,3,white ash,10.6,NA,NA,tree,NA,NA
+904,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,4,white ash,20.3,NA,NA,tree,NA,NA
+905,19-Oct-19,Beaver Creek,Deciduous,1,17,Q4,5,white ash,13.3,NA,NA,tree,NA,NA
+908,19-Oct-19,Beaver Creek,Deciduous,2,18,Q1,2,white ash,22,5,1,tree,NA,NA
+910,19-Oct-19,Beaver Creek,Deciduous,2,18,Q1,4,white ash,17.6,5,5,tree,NA,NA
+912,19-Oct-19,Beaver Creek,Deciduous,2,18,Q1,6,white ash,27.3,2,10,tree,NA,NA
+914,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,1,white ash,26.2,12,6,tree,NA,NA
+916,19-Oct-19,Beaver Creek,Deciduous,2,18,Q2,3,white ash,17.9,20,2,tree,NA,NA
+929,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,2,white ash,29.2,NA,NA,tree,NA,NA
+932,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,5,white ash,13.8,NA,NA,tree,NA,NA
+933,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,6,white ash,12.1,NA,NA,tree,NA,NA
+935,19-Oct-19,Beaver Creek,Deciduous,2,18,Q4,8,white ash,26.4,NA,NA,tree,NA,NA
+799,16-Oct-19,Whipoorwill,Pine,2,14,Q1,3,white birch,12.3,1,8,tree,NA,NA
+800,16-Oct-19,Whipoorwill,Pine,2,14,Q1,4,white birch,30,2,8,tree,NA,NA
+818,16-Oct-19,Whipoorwill,Pine,2,14,Q3,11,white birch,13.5,NA,NA,tree,NA,NA
+826,16-Oct-19,Whipoorwill,Pine,2,14,Q4,8,white birch,16.2,dead,NA,tree,NA,NA
+851,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q1,1,white birch,13,2,3,tree,NA,NA
+852,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q1,2,white birch,16.3,1,5,tree,NA,NA
+856,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q1,6,white birch,27.5,6,4,tree,NA,NA
+863,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q2,3,white birch,20.9,18,10,tree,NA,NA
+866,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,3,white birch,18.1,NA,NA,tree,NA,NA
+871,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,8,white birch,17.6,NA,NA,tree,NA,NA
+875,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q4,2,white birch,21.2,NA,NA,tree,NA,NA
+865,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,2,white cedar,14.2,NA,NA,tree,NA,NA
+870,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q3,7,white cedar,23.6,NA,NA,tree,NA,NA
+163,4-Oct-17,South Hammond,Pine,1,4,Q1,83,white oak,11,2,3,tree,8,
+164,4-Oct-17,South Hammond,Pine,1,4,Q1,92,white oak,11,5.3,2,tree,11,
+167,4-Oct-17,South Hammond,Pine,1,4,Q1,81,white oak,22,0,2,tree,14.4,
+182,4-Oct-17,South Hammond,Pine,1,4,Q2,139,white oak,34.3,8,7.2,tree,11,
+183,4-Oct-17,South Hammond,Pine,1,4,Q2,138,white oak,47.2,5,5,tree,13,
+188,4-Oct-17,South Hammond,Pine,1,4,Q3,146,white oak,17.3,,,tree,,
+189,4-Oct-17,South Hammond,Pine,1,4,Q3,142,white oak,17.7,,,tree,,
+191,4-Oct-17,South Hammond,Pine,1,4,Q3,144,white oak,40.6,,,tree,,
+198,4-Oct-17,South Hammond,Pine,1,4,Q4,151,white oak,22.8,,,tree,,
+218,4-Oct-17,South Hammond,Pine,2,5,Q3,110,white oak,16.5,,,tree,,
+229,11-Oct-17,South Hammond,Pine,3,6,Q1,115,white oak,14,3.8,3,tree,15,
+233,11-Oct-17,South Hammond,Pine,3,6,Q2,120,white oak,13.5,6,1,tree,17,
+1,1-Nov-17,Degrasse,Pine,1,10,Q1,157,white pine,13.1,8,2,tree,9,
+2,1-Nov-17,Degrasse,Pine,1,10,Q1,159,white pine,13.8,4,7,tree,10,
+24,1-Nov-17,Degrasse,Pine,2,11,Q2,175,white pine,26.8,2.4,2.4,tree,16,
+45,1-Nov-17,Degrasse,Pine,3,12,Q1,187,white pine,16,9,3.5,tree,11,
+53,1-Nov-17,Degrasse,Pine,3,12,Q3,191,white pine,25,,,tree,,
+165,4-Oct-17,South Hammond,Pine,1,4,Q1,93,white pine,11,6.5,2,tree,9,
+168,4-Oct-17,South Hammond,Pine,1,4,Q1,84,white pine,30,2.6,4.8,tree,15.6,
+181,4-Oct-17,South Hammond,Pine,1,4,Q2,140,white pine,18.9,9,1,tree,8,
+190,4-Oct-17,South Hammond,Pine,1,4,Q3,143,white pine,19,,,tree,,
+195,4-Oct-17,South Hammond,Pine,1,4,Q4,149,white pine,10.5,,,tree,,
+196,4-Oct-17,South Hammond,Pine,1,4,Q4,148,white pine,12.5,,,tree,,
+201,4-Oct-17,South Hammond,Pine,1,4,Q4,152,white pine,27.3,,,tree,,
+204,4-Oct-17,South Hammond,Pine,2,5,Q1,95,white pine,14.1,1.5,3,tree,11,
+205,4-Oct-17,South Hammond,Pine,2,5,Q1,94,white pine,16,1,2,tree,12,
+208,4-Oct-17,South Hammond,Pine,2,5,Q1,97,white pine,47.1,6.6,4.2,tree,17,
+228,11-Oct-17,South Hammond,Pine,3,6,Q1,116,white pine,12,7.7,6,tree,6.5,
+260,11-Oct-17,South Hammond,Pine,3,6,Q3,130,white pine,18.7,,,tree,,
+289,11-Oct-17,South Hammond,Pine,3,6,Q4,131,white pine,10.7,,,tree,,
+784,14-Sep-19,Whipoorwill,Pine,1,13,Q3,1,white pine,47.4,NA,NA,tree,NA,NA
+785,14-Sep-19,Whipoorwill,Pine,1,13,Q3,2,white pine,36.9,NA,NA,tree,NA,NA
+786,14-Sep-19,Whipoorwill,Pine,1,13,Q3,3,white pine,44.4,NA,NA,tree,NA,NA
+787,14-Sep-19,Whipoorwill,Pine,1,13,Q3,4,white pine,31.7,NA,NA,tree,NA,NA
+788,14-Sep-19,Whipoorwill,Pine,1,13,Q3,5,white pine,40.3,NA,NA,tree,NA,NA
+789,14-Sep-19,Whipoorwill,Pine,1,13,Q3,6,white pine,32.3,NA,NA,tree,NA,NA
+790,14-Sep-19,Whipoorwill,Pine,1,13,Q3,7,white pine,38.5,NA,NA,tree,NA,NA
+791,14-Sep-19,Whipoorwill,Pine,1,13,Q3,8,white pine,33.9,NA,NA,tree,NA,NA
+792,14-Sep-19,Whipoorwill,Pine,1,13,Q3,9,white pine,18.8,NA,NA,tree,NA,NA
+794,14-Sep-19,Whipoorwill,Pine,1,13,Q4,2,white pine,44.2,NA,NA,tree,NA,NA
+795,14-Sep-19,Whipoorwill,Pine,1,13,Q4,3,white pine,48.3,NA,NA,tree,NA,NA
+796,14-Sep-19,Whipoorwill,Pine,1,13,Q4,4,white pine,30.4,NA,NA,tree,NA,NA
+797,16-Oct-19,Whipoorwill,Pine,2,14,Q1,1,white pine,28.6,1,2,tree,NA,NA
+798,16-Oct-19,Whipoorwill,Pine,2,14,Q1,2,white pine,15.9,1,8,tree,NA,NA
+801,16-Oct-19,Whipoorwill,Pine,2,14,Q1,5,white pine,37.4,4,6,tree,NA,NA
+802,16-Oct-19,Whipoorwill,Pine,2,14,Q1,6,white pine,13.8,8,2,tree,NA,NA
+806,16-Oct-19,Whipoorwill,Pine,2,14,Q2,4,white pine,36.7,14,8,tree,NA,NA
+807,16-Oct-19,Whipoorwill,Pine,2,14,Q2,5,white pine,32.3,13,10,tree,NA,NA
+811,16-Oct-19,Whipoorwill,Pine,2,14,Q3,2,white pine,36,NA,NA,tree,NA,NA
+812,16-Oct-19,Whipoorwill,Pine,2,14,Q3,3,white pine,36.2,NA,NA,tree,NA,NA
+817,16-Oct-19,Whipoorwill,Pine,2,14,Q3,9,white pine,10.4,NA,NA,tree,NA,NA
+820,16-Oct-19,Whipoorwill,Pine,2,14,Q4,2,white pine,31.9,NA,NA,tree,NA,NA
+821,16-Oct-19,Whipoorwill,Pine,2,14,Q4,3,white pine,32.3,NA,NA,tree,NA,NA
+822,16-Oct-19,Whipoorwill,Pine,2,14,Q4,4,white pine,38.3,NA,NA,tree,NA,NA
+824,16-Oct-19,Whipoorwill,Pine,2,14,Q4,6,white pine,12.9,NA,NA,tree,NA,NA
+825,16-Oct-19,Whipoorwill,Pine,2,14,Q4,7,white pine,31.7,NA,NA,tree,NA,NA
+827,16-Oct-19,Whipoorwill,Pine,2,14,Q4,9,white pine,13.6,NA,NA,tree,NA,NA
+828,16-Oct-19,Whipoorwill,Pine,2,14,Q4,10,white pine,32.6,NA,NA,tree,NA,NA
+829,16-Oct-19,Whipoorwill,Pine,2,14,Q4,11,white pine,15.3,NA,NA,tree,NA,NA
+141,27-Sep-17,Donnerville,Deciduous,3,3,Q1,67,yellow birch,22,7,10,tree,9.5,
+143,27-Sep-17,Donnerville,Deciduous,3,3,Q1,62,yellow birch,29.5,1,6.5,tree,14,
+150,27-Sep-17,Donnerville,Deciduous,3,3,Q2,71,yellow birch,32,3,6,tree,14.3,
+156,27-Sep-17,Donnerville,Deciduous,3,3,Q3,75,yellow birch,22.2,,,tree,,
+162,27-Sep-17,Donnerville,Deciduous,3,3,Q4,80,yellow birch,32,,,tree,,
+858,5-Oct-19,Whiskey Flats,Deciduous,2,16,Q1,8,yellow birch,23,9,1,tree,NA,NA
