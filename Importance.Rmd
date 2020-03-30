@@ -1,9 +1,9 @@
 ---
-title: "Importance Values and Diversity Analysis"
+title: "Importance Analysis"
 output: html_notebook
 ---
 
-Going over Leslie's data to see if I get the same results she does.
+Calculating Leslie's importance values  to see if I get the same results she does when I compare with her work.
 
 Prep the workspace
 ```{r}
@@ -28,9 +28,9 @@ Looks like there might be a really big tree or two.  Check them out.
 
 ```{r}
 big<-filter(DF, DBH >= 60)
+big
 ```
 Two big sugar maples at donnerville.  Reasonable.
-
 
 Now look at species to see if they are all named correctly. Start by making some factor variables
 ```{r}
@@ -122,6 +122,37 @@ MeanDiv<-SRbyPlot %>% group_by(Forest) %>% summarize(
   
 )
 ```
+Now reshape to plot
+```{r}
+#first rename some columns to make a pattern easier to determine
+
+names(MeanDiv)
+newNames<-c("Forest", "N", "SR_mean", "SR_sd", "SR_sem", "Shan_mean", "Shan_sd", "Shan_sem", "Simp_mean", "Simp_sd", "Simp_sem", "InSimp_mean", "InSimp_sd", "InSimp_sem")
+names(MeanDiv)<-newNames
+#now pivot longer
+DataToPlot<-MeanDiv %>% pivot_longer(
+  cols = SR_mean:InSimp_sem,
+  names_to = c("Index", "statistic"),
+  names_sep = "_",
+  values_to = "Value"
+)
+#now spread again
+DataToPlot<-DataToPlot %>% pivot_wider(names_from = statistic, values_from = Value)
+```
+Perfect!
+
+And make some plots:
+
+```{r}
+ggplot(DataToPlot, aes(Forest, mean, color = Index, group = Index))+
+  geom_point()+
+  geom_errorbar(aes(ymin = mean - sem, ymax = mean+sem), width = 0.1)+
+  ylab("Mean Value")+
+  theme_bw()
+  
+```
+
+
 
 
 

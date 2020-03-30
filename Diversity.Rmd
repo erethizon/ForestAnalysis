@@ -3,7 +3,7 @@ title: "Diversity Analysis"
 output: html_notebook
 ---
 
-Going over Leslie's data to see if I get the same results she does.
+Calculating Leslie's diversity values to see if I get the same results she does when I compare with her work.
 
 Prep the workspace
 ```{r}
