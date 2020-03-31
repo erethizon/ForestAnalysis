@@ -169,18 +169,330 @@ ImportancePerPlot<-ImportancePerPlot %>% mutate(
 )
 ```
 ### Step 3. Frequency and Relative Frequency
+First step is to determine the total number of plots. 
+```{r}
+treePlots<-nrow(PerP)
+```
+Now determine, for each species, the number of plots in which the species occurs
 
+```{r}
+SpeciesByPlots<-trees %>% group_by(Forest, Species, PlotID) %>% summarise(
+  NumInPlot = length(PlotID))
+#num in plot corresponds to Number in ImportancePerPlot
+ImportancePerPlot<-ImportancePerPlot %>% mutate(
+  plot_present = 1
+)
+#assign each species in each plot a value of 1 to indicate present rather than the actual count of trees.
 
+SpByP<-ImportancePerPlot %>% group_by(Species) %>% summarise(
+  NumPlots = sum(plot_present)
+)
 
+SpByP<-SpByP %>% mutate(
+  TotPlots = nrow(PerP),
+  RelFreq = (NumPlots/TotPlots)*100
+)
+  
+```
+Now join back to importance values
+```{r}
+ImportancePerPlot<-left_join(ImportancePerPlot, SpByP, by = "Species")
+```
+### Step 4. Calculate Importance value
+Importance value is relative density + relative dominance + relative frequency
+```{r}
+ImportancePerPlot <-  ImportancePerPlot %>% mutate(
+  IV = RelDen+RelDom+RelFreq
+)
+```
+Now that I have importance value per plot, I want to get average importance value of each species per forest.
 
+```{r}
+AvgIVtrees<-ImportancePerPlot %>% group_by(Forest, Species) %>% summarize(
+  IV_mean=mean(IV,na.rm=T),
+  IV_sd =sd(IV, na.rm = T),
+  IV_sem = sd(IV, na.rm = T)/sqrt(sum(!is.na(IV)))
+)
+```
+Now make some plots:
 
+Set up a dodge so that error bars and points won't overlap
+```{r}
+dodge<-position_dodge(0.35)
+```
+
+```{r}
+ggplot(AvgIVtrees, aes(Species, IV_mean, group = Forest, color = Forest))+
+  geom_point(position = dodge)+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem),position = dodge)+
+  labs(y = "Average Importance Value - Trees")+
+  coord_flip()
+```
+Now plot by forest rather than species:
+```{r}
+ggplot(AvgIVtrees, aes(Forest, IV_mean, group = Species, color = Species))+
+  geom_point(position = dodge)+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem), position = dodge)+
+  labs(y = "Average Importance Value - Trees")+
+  coord_flip()
+```
+And now plot by species, facet by forest, rank IV first
+
+```{r}
+ggplot(AvgIVtrees, aes(Species, IV_mean, color = Species))+
+  geom_point(position = dodge)+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem),position = dodge)+
+  labs(y = "Average Importance Value - Trees")+
+  coord_flip()+
+  facet_wrap(~Forest)
+```
 
 ##Seedlings/Saplings
 Establish area var for seedlings/saplings
 ```{r}
-APQ_ss<-30 #30m2 for the 3 seedling/sapling plots
+APP_ss<-30 #30m2 for the 3 seedling/sapling plots
 ```
 
+###Step 1. Density and relative density
+Determine number of trees per plot
+```{r}
+sPerP<-seedsap %>% group_by(Forest, PlotID) %>% summarise(
+  ssapPerP = length(Species)
+)
+```
+Get total density of seedlings and sapling per plot = #seedlings&saplings/area sampled
+```{r}
+sPerP<-sPerP %>% mutate(
+  total_density = ssapPerP/APP_ss
+)
+```
+
+Calculate density for each species where density = #seedsor saps per area
+
+Start with number of seedlings&saplings by species for each plot
+```{r}
+sImportancePerPlot<-seedsap %>% group_by(Forest, PlotID, Species) %>% summarise(
+  Number = length(Species)
+)
+```
+And now get density by species
+```{r}
+sImportancePerPlot<-sImportancePerPlot %>% mutate(
+  dens_in_plot = Number/APP_ss
+)
+```
+Now add the total density per plot to the ImportancePerPlot df so that we can do math with it. 
+
+Use a join to join by forest and plot id and then join PerP to ImportancePerPlot.
+
+```{r}
+sImportancePerPlot<-left_join(sImportancePerPlot, sPerP, by = c("Forest", "PlotID"))
+```
+
+Now I can calculate relative density for each species 
+
+Relative density = (density for a species/total density of trees in plot)*100
+```{r}
+sImportancePerPlot<-sImportancePerPlot %>% mutate(
+  RelDen = (dens_in_plot/total_density)*100
+)
+```
+### Step 2. Dominance and Relative Dominance
+Begin by calculating dominance for each species
+
+Dominance = (total of basal area/area sampled)
+
+Calculate basal area for each tree in the trees df
+To do so, calculate radius as DBH/2 and then basal area as pi*radius squared
+
+```{r}
+seedsap<-seedsap %>% mutate(
+  BA = (pi*((DBH/2)*(DBH/2)))
+)
+
+```
+Now get total basal area and dominance (BA/area sampled) per plot
+
+```{r}
+sDominance<-seedsap %>% group_by(Forest, PlotID) %>% summarize(
+  TotBA = sum(BA),
+  Dom = sum(BA)/APP_ss
+)
+```
+Now add to sPerPlot to keep things straightforward
+```{r}
+sPerP$TotBA = sDominance$TotBA
+sPerP$TotDom=sDominance$Dom
+```
+Now get BA and dominance per species rather than per plot
+```{r}
+sDomPerSp<-seedsap %>% group_by(Forest, PlotID, Species) %>% summarize(
+  BA = sum(BA),
+  Dom = sum(BA)/APP_ss
+)
+```
+Now join those to ImportancePerPlot
+```{r}
+sImportancePerPlot<-left_join(sImportancePerPlot, sDomPerSp)
+```
+Now join the total dominance to ImportancePerP
+```{r}
+sImportancePerPlot<-left_join(sImportancePerPlot, sPerP, by = c("Forest", "PlotID"))
+```
+Now drop a couple of columns and rename a couple to keep things making sense:
+
+Now I can calculate relative dominance
+
+RelDom = (dom for a species/total dom)*100
+```{r}
+sImportancePerPlot<-sImportancePerPlot %>% mutate(
+  RelDom = 100*(Dom/TotDom)
+)
+```
+### Step 3. Frequency and Relative Frequency
+First step is to determine the total number of plots. 
+```{r}
+seedsapPlots<-nrow(sPerP)
+```
+Now determine, for each species, the number of plots in which the species occurs
+
+```{r}
+sSpeciesByPlots<-seedsap %>% group_by(Forest, Species, PlotID) %>% summarise(
+  NumInPlot = length(PlotID))
+#num in plot corresponds to Number in ImportancePerPlot
+sImportancePerPlot<-sImportancePerPlot %>% mutate(
+  plot_present = 1
+)
+#assign each species in each plot a value of 1 to indicate present rather than the actual count of trees.
+
+sSpByP<-sImportancePerPlot %>% group_by(Species) %>% summarise(
+  NumPlots = sum(plot_present)
+)
+
+sSpByP<-sSpByP %>% mutate(
+  TotPlots = nrow(PerP),
+  RelFreq = (NumPlots/TotPlots)*100
+)
+  
+```
+Now join back to importance values
+```{r}
+sImportancePerPlot<-left_join(sImportancePerPlot, sSpByP, by = "Species")
+```
+### Step 4. Calculate Importance value
+Importance value is relative density + relative dominance + relative frequency
+```{r}
+sImportancePerPlot <-  sImportancePerPlot %>% mutate(
+  IV = RelDen+RelDom+RelFreq
+)
+```
+Now that I have importance value per plot, I want to get average importance value of each species per forest.
+
+```{r}
+AvgIVseedsap<-sImportancePerPlot %>% group_by(Forest, Species) %>% summarize(
+  IV_mean=mean(IV,na.rm=T),
+  IV_sd =sd(IV, na.rm = T),
+  IV_sem = sd(IV, na.rm = T)/sqrt(sum(!is.na(IV)))
+)
+```
+Now make some plots:
+```{r}
+ggplot(AvgIVseedsap, aes(Species, IV_mean, group = Forest, color = Forest))+
+  geom_point(position = dodge)+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem),position = dodge)+
+  labs(y = "Average Importance Value - Seedlings/Saplings")+
+  coord_flip()
+```
+Now plot by forest rather than species:
+```{r}
+ggplot(AvgIVseedsap, aes(Forest, IV_mean, group = Species, color = Species))+
+  geom_point(position = dodge)+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem),position = dodge)+
+  labs(y = "Average Importance Value - Seedlings/Saplings")+
+  coord_flip()
+```
+And now plot by species, facet by forest, rank IV first
+
+```{r}
+ggplot(AvgIVseedsap, aes(Species, IV_mean, color = Species))+
+  geom_point(position = dodge)+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem),position = dodge)+
+  labs(y = "Average Importance Value - Seedlings/Saplings")+
+  coord_flip()+
+  facet_wrap(~Forest)
+```
+## Combine trees with seedlings and saplings
+To get overall importance of each species, need to now add together the importance values for trees and seedlings/saplings for each species to give total importance.  
+
+I just made this up as an approach.
+
+Do this by first joining the tables for trees and for seedlings/saplings:
+
+```{r}
+allImportance<-full_join(ImportancePerPlot, sImportancePerPlot, by = c("Forest", "PlotID", "Species"))
+
+```
+Now strip down to just the columns I need:
+```{r}
+keep<-c("Forest", "PlotID", "Species", "IV.x", "IV.y")
+Imp<-allImportance[,keep]
+```
+Now replace NAs with zeros for IVs for those species that are not present at certain sites.
+
+```{r}
+Imp[is.na(Imp)]<-0
+```
+
+Now add together, then get average per forest
+```{r}
+Imp<-Imp %>% mutate(
+  sumIV = sum(IV.x,IV.y, na.rm = T)
+)
+```
+Now get averages
+```{r}
+AvgIV<-Imp %>% group_by(Forest, Species) %>% summarize(
+  IV_mean=mean(sumIV,na.rm=T),
+  IV_sd =sd(sumIV, na.rm = T),
+  IV_sem = sd(sumIV, na.rm = T)/sqrt(sum(!is.na(sumIV)))
+)
+```
+
+SOMETHING IS WRONG - THESE VALUES ARE REALLY LARGE! I THINK SOMETHING IS GOING WONKY WITH THE AVERAGING
+And plot:
+Set up a dodge to keep things from plotting on top of one another:
+```{r}
+dodge<-position_dodge(0.35)
+```
+
+```{r}
+ggplot(AvgIV, aes(Species, IV_mean, group = Forest, color = Forest))+
+  geom_point(position = dodge)+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem), position = dodge)+
+  labs(y = "Average Importance Value")+
+  coord_flip()
+```
+
+
+Now plot by forest rather than species:
+```{r}
+ggplot(AvgIV, aes(Forest, IV_mean, group = Species, color = Species))+
+  geom_point()+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem))+
+  labs(y = "Average Importance Value")+
+  coord_flip()
+```
+And now plot by species, facet by forest, rank IV first
+
+```{r}
+ggplot(AvgIV, aes(Species, IV_mean, color = Species))+
+  geom_point()+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem))+
+  labs(y = "Average Importance Value")+
+  coord_flip()+
+  facet_wrap(~Forest)+
+  theme(legend.position="none")
+```
 
 
 
