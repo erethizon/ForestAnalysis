@@ -5,6 +5,12 @@ output: html_notebook
 
 Calculating Leslie's importance values  to see if I get the same results she does when I compare with her work.
 
+Because we measured trees per plot but seedlings and saplings per circle, we need to calculate importance of trees vs. seedlings/saplings and then add them together to get a species importance value. 
+
+Trees are per plot: One plot = 400m2, which is the same as 1/25 of a hectare; thus multiplying by a factor of 25 converts to trees per hectare.
+
+Seedlings/saplings are per circle; one circle is 10m2 which is 1/1000 of a hectare; multiplying by 1000 gives per hectare. However, we have 3 circles per plot; thus we have 30m2 total and that means multiply by 333.3 to get per hectare.
+
 Prep the workspace
 ```{r}
 rm(list = ls())
@@ -39,123 +45,141 @@ species
 ```
 Looks good. Though the white birch are likely gray birch.
 
-## Step 1. Species Richness
-Ok. Now let's get overall species richness by site.
+Get a tree and seed/sap dataframe
 ```{r}
-SRbySite<-DF %>% group_by(Forest) %>% summarise(
-   SR = n_distinct(Species)
+trees<-filter(DF, Type == "tree")
+seedsap<-filter(DF, Type != "tree")
+```
+We will now step through calculation of IV, first for trees and then repeat the same steps for seedlings/saplings.
+##Trees
+###Step 1. Density and relative density
+Establish area var for trees
+
+```{r}
+APP_t<-400 #AreaPerPlot = 400m2 per forest plot
+```
+Determine number of trees per plot
+```{r}
+PerP<-trees %>% group_by(Forest, PlotID) %>% summarise(
+  treesPerP = length(Species)
 )
 ```
-Now by site and by plot
+Get total density of trees per plot = #trees/area sampled
 ```{r}
-SRbyPlot<-DF %>% group_by(Forest, PlotID) %>% summarise(
-SR = n_distinct(Species)
+PerP<-PerP %>% mutate(
+  DensPerPlot = treesPerP/APP_t
 )
 ```
-Now mean species richness by forest
+Get total density of trees per hectare per forest plot by multiplying DensPerPlot times 25 (the scaling factor for a forest plot)
 ```{r}
-MeanSR<-SRbyPlot %>% group_by(Forest) %>% summarize(
-  MeanSR = mean(SR, na.rm = T),
-  SDSR =sd(SR, na.rm = T),
-  semSR = (sd(SR)/length(SR)),
-  N = length(SR)
+PerP<-PerP %>% mutate(
+  DensPerHect=DensPerPlot*25
 )
 ```
-## Step 2. Diversity
-We'll use the vegan package to calculate diversity
-```{r}
-library(vegan)
-```
+Calculate density for each species where density = #trees per area
 
-To run diversity indices, we need to know, per site, the number of trees of each species.  Then we transpose into a vegan type matrix.
-
-### Create data set
+Start with number of trees by species for each plot
 ```{r}
-Diversity<-DF %>% group_by(Forest, PlotID, Species) %>% summarize(
-count = length(Tree)
+ImportancePerPlot<-trees %>% group_by(Forest, PlotID, Species) %>% summarise(
+  Number = length(Species)
 )
 ```
-Now we need to spread the data across species, so that each cell is the total number of that species for that plot in that forest
-
+And now get density by species
 ```{r}
-Div1<-spread(Diversity, Species, count)
-```
-This looks good, but we need to get rid of the forest name and plot id to run in vegan. 
-
-```{r}
-Div2<-Div1[,-(1:2)]
-```
-Now replace all the NA's with 0
-```{r}
-Div2[is.na(Div2)]<-0
-```
-Now we can use vegan
-Shannon index:
-
-```{r}
-Shannon<-diversity(Div2, index = "shannon")
-Simpson<-diversity(Div2, index = "simpson")
-InvSimp<-diversity(Div2, index = "invsimpson")
-```
-Now append the Diversity data set
-```{r}
-SRbyPlot$Shannon<-Shannon
-SRbyPlot$Simpson<-Simpson
-SRbyPlot$Inv_Simpson<-InvSimp
-```
-And now get all the means
-```{r}
-MeanDiv<-SRbyPlot %>% group_by(Forest) %>% summarize(
-  N = length(SR),
-  MeanSR = mean(SR, na.rm = T),
-  SDSR =sd(SR, na.rm = T),
-  semSR = (sd(SR)/length(SR)),
-  MeanShan=mean(Shannon, na.rm = T),
-  SD_Shan=sd(Shannon, na.rm = T),
-  semShan = (sd(Shannon)/length(SR)),
-  MeanSimp = mean(Simpson, na.rm = T),
-  SD_Simp=sd(Simpson, na.rm = T),
-  semSimp = (sd(Simpson)/length(SR)),
-  MeanInSimp = mean(Inv_Simpson, na.rm = T),
-  SD_InSimp=sd(Inv_Simpson, na.rm = T),
-  semInSimp = (sd(Inv_Simpson)/length(SR)),
-  
+ImportancePerPlot<-ImportancePerPlot %>% mutate(
+  PlotDensity = Number/APP_t
 )
 ```
-Now reshape to plot
-```{r}
-#first rename some columns to make a pattern easier to determine
+Now add the total density per plot to the ImportancePerPlot df so that we can do math with it. 
 
-names(MeanDiv)
-newNames<-c("Forest", "N", "SR_mean", "SR_sd", "SR_sem", "Shan_mean", "Shan_sd", "Shan_sem", "Simp_mean", "Simp_sd", "Simp_sem", "InSimp_mean", "InSimp_sd", "InSimp_sem")
-names(MeanDiv)<-newNames
-#now pivot longer
-DataToPlot<-MeanDiv %>% pivot_longer(
-  cols = SR_mean:InSimp_sem,
-  names_to = c("Index", "statistic"),
-  names_sep = "_",
-  values_to = "Value"
+Use a join to join by forest and plot id and then join PerP to ImportancePerPlot.
+
+```{r}
+ImportancePerPlot<-left_join(ImportancePerPlot, PerP, by = c("Forest", "PlotID"))
+```
+It worked! Now drop a couple of columns and rename a couple to keep things making sense:
+```{r}
+#drop density per hectare
+ImportancePerPlot<-select(ImportancePerPlot, -c(treesPerP,DensPerHect))
+#now rename
+ImportancePerPlot<-rename(ImportancePerPlot, dens_in_plot = PlotDensity, total_density = DensPerPlot )
+```
+Now I can calculate relative density for each species 
+
+Relative density = (density for a species/total density of trees in plot)*100
+```{r}
+ImportancePerPlot<-ImportancePerPlot %>% mutate(
+  RelDen = (dens_in_plot/total_density)*100
 )
-#now spread again
-DataToPlot<-DataToPlot %>% pivot_wider(names_from = statistic, values_from = Value)
 ```
-Perfect!
+### Step 2. Dominance and Relative Dominance
+Begin by calculating dominance for each species
 
-And make some plots:
+Dominance = (total of basal area/area sampled)
+
+Calculate basal area for each tree in the trees df
+To do so, calculate radius as DBH/2 and then basal area as pi*radius squared
 
 ```{r}
-ggplot(DataToPlot, aes(Forest, mean, color = Index, group = Index))+
-  geom_point()+
-  geom_errorbar(aes(ymin = mean - sem, ymax = mean+sem), width = 0.1)+
-  ylab("Mean Value")+
-  theme_bw()
-  
+trees<-trees %>% mutate(
+  BA = (pi*((DBH/2)*(DBH/2)))
+)
+
 ```
+Now get total basal area and dominance (BA/area sampled) per plot
+
+```{r}
+Dominance<-trees %>% group_by(Forest, PlotID) %>% summarize(
+  TotBA = sum(BA),
+  Dom = sum(BA)/APP_t
+)
+```
+Now add to PerPlot to keep things straightforward
+```{r}
+PerP$TotBA = Dominance$TotBA
+PerP$TotDom=Dominance$Dom
+```
+Now get BA and dominance per species rather than per plot
+```{r}
+DomPerSp<-trees %>% group_by(Forest, PlotID, Species) %>% summarize(
+  BA = sum(BA),
+  Dom = sum(BA)/APP_t
+)
+```
+Now join those to ImportancePerPlot
+```{r}
+ImportancePerPlot<-left_join(ImportancePerPlot, DomPerSp)
+```
+Now join the total dominance to ImportancePerP
+```{r}
+ImportancePerPlot<-left_join(ImportancePerPlot, PerP, by = c("Forest", "PlotID"))
+```
+Now drop a couple of columns and rename a couple to keep things making sense:
+```{r}
+#drop unneeded variables
+ImportancePerPlot<-select(ImportancePerPlot, -c(treesPerP,DensPerPlot, DensPerHect, TotBA))
+
+```
+Now I can calculate relative dominance
+
+RelDom = (dom for a species/total dom)*100
+```{r}
+ImportancePerPlot<-ImportancePerPlot %>% mutate(
+  RelDom = 100*(Dom/TotDom)
+)
+```
+### Step 3. Frequency and Relative Frequency
 
 
 
 
 
+
+##Seedlings/Saplings
+Establish area var for seedlings/saplings
+```{r}
+APQ_ss<-30 #30m2 for the 3 seedling/sapling plots
+```
 
 
 
