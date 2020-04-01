@@ -246,7 +246,17 @@ ggplot(AvgIVtrees, aes(Species, IV_mean, color = Species))+
   coord_flip()+
   facet_wrap(~Forest)
 ```
+And finally, facet by species (just to look for patterns)
 
+```{r}
+ggplot(AvgIVtrees, aes(Forest, IV_mean, color = Forest))+
+  geom_point()+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem))+
+  labs(y = "Average Importance Value - trees")+
+  coord_flip()+
+  facet_wrap(~Species)+
+  theme(legend.position="none")
+```
 ##Seedlings/Saplings
 Establish area var for seedlings/saplings
 ```{r}
@@ -421,6 +431,18 @@ ggplot(AvgIVseedsap, aes(Species, IV_mean, color = Species))+
   coord_flip()+
   facet_wrap(~Forest)
 ```
+And finally, facet by species (just to look for patterns)
+
+```{r}
+ggplot(AvgIVseedsap, aes(Forest, IV_mean, color = Forest))+
+  geom_point()+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem))+
+  labs(y = "Average Importance Value - seedlings & saplings")+
+  coord_flip()+
+  facet_wrap(~Species)+
+  theme(legend.position="none")
+```
+
 ## Combine trees with seedlings and saplings
 To get overall importance of each species, need to now add together the importance values for trees and seedlings/saplings for each species to give total importance.  
 
@@ -446,8 +468,8 @@ Imp[is.na(Imp)]<-0
 Now add together, then get average per forest
 ```{r}
 Imp<-Imp %>% mutate(
-  sumIV = sum(IV.x,IV.y, na.rm = T)
-)
+  sumIV = IV.x+ IV.y
+  )#note that this will be problematic if you have NA's
 ```
 Now get averages
 ```{r}
@@ -457,8 +479,6 @@ AvgIV<-Imp %>% group_by(Forest, Species) %>% summarize(
   IV_sem = sd(sumIV, na.rm = T)/sqrt(sum(!is.na(sumIV)))
 )
 ```
-
-SOMETHING IS WRONG - THESE VALUES ARE REALLY LARGE! I THINK SOMETHING IS GOING WONKY WITH THE AVERAGING
 And plot:
 Set up a dodge to keep things from plotting on top of one another:
 ```{r}
@@ -493,6 +513,33 @@ ggplot(AvgIV, aes(Species, IV_mean, color = Species))+
   facet_wrap(~Forest)+
   theme(legend.position="none")
 ```
+And finally, facet by species (just to look for patterns)
+
+```{r}
+ggplot(AvgIV, aes(Forest, IV_mean, color = Forest))+
+  geom_point()+
+  geom_errorbar(aes(ymin = IV_mean - IV_sem, ymax = IV_mean + IV_sem))+
+  labs(y = "Average Importance Value")+
+  coord_flip()+
+  facet_wrap(~Species)+
+  theme(legend.position="none")
+```
+Finally, let's generate a table of imporatance values by forest, plot and species.We'll include tree IV, seed/sap IV, and total IV.
+
+These are the data contained in Imp, but let's rename the columns for clarity before writing it.
+
+```{r}
+names(Imp)
+```
+Now rename
+```{r}
+Imp <- Imp %>% rename(IV_tree = IV.x, IV_ssap = IV.y, IV_all = sumIV)
+```
+And write
+```{r}
+write.csv(Imp,"Data/ImportanceValues.csv")
+```
+
 
 
 

@@ -1,0 +1,160 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Let's do a community ordination on the forests from the Game Camera study and see how the forests compare to each other.  Use code from Forest Ecology as an example.
+
+To do this, we need a data frame that has a column for site, a column for plot and then a column for each species.  The value in each cell for each species should be the value upon with the ordination is being based (e.g. importance value, number of species, etc.)
+
+We'll use output generated from the importance value work we did in Importance.Rmd.
+
+### Set up the workspace
+```{r}
+rm(list = ls())
+library(tidyverse)
+library(vegan)
+library(ggplot2)
+```
+Install ggvegan from github
+```{r}
+devtools::install_github("gavinsimpson/ggvegan")
+```
+And turn it on
+```{r}
+library(ggvegan)
+```
+And load some data
+
+```{r}
+IV<-read.csv("Data/ImportanceValues.csv", stringsAsFactors = F)
+```
+Now let's divide into 3 df's for all, trees, seedsaps
+
+```{r}
+IV_all<-select(IV, -c(IV_tree, IV_ssap))
+IV_trees<-select(IV, -c(IV_ssap, IV_all))
+IV_ssap<-select(IV, -c(IV_tree, IV_all))
+```
+And now we need to rearrange to fit the standard vegan shape.
+
+```{r}
+IVaV<-spread(IV_all, Species, IV_all)
+IVtV<-spread(IV_trees, Species, IV_tree)
+IVsV<-spread(IV_ssap, Species, IV_ssap)
+```
+Now need to replace all the NAs with zeroes
+```{r}
+IVaV[is.na(IVaV)]<-0
+IVtV[is.na(IVtV)]<-0
+IVsV[is.na(IVsV)]<-0
+```
+
+### Run the ordination
+#### Start with all
+```{r}
+IVa.nmds.bray<-metaMDS(IVaV[,3:22], distance = "bray", trace = FALSE, trymax = 100)
+```
+metaMDS is a "wrapper function" - takes raw species abundance data and standardizes is so that abundance isn't over important.  Then runs
+monoMDS a bunch of times until it times 2 similar configurations with minimized stress value and rotates answer.  trymax is number of tries
+ 
+Now look at the results
+```{r}
+IVa.nmds.bray
+```
+Plot the result
+```{r}
+plot(IVa.nmds.bray, type = "t")
+```
+And make a nicer plot
+```{r}
+PlotData<-fortify(IVa.nmds.bray)
+```
+And plot:
+```{r}
+ggplot(PlotData, aes(NMDS1,NMDS2,group = Score))+
+   geom_text(aes(label=Label, color = Score))+
+   scale_color_manual(values = c(sites = "brown", species = "green"))+
+   geom_point(aes(color=Score, shape =Score, size =.1))+
+   scale_color_manual(values = c(sites = "red", species = "black"))
+```
+Goodness of fit
+```{r}
+gof<-goodness(IVa.nmds.bray) #goodness of fit
+plot(IVa.nmds.bray, type = "t", main = "goodness of fit")
+points(IVa.nmds.bray, display = "sites", cex=gof*100)
+
+```
+#### Now trees
+```{r}
+IVt.nmds.bray<-metaMDS(IVtV[,3:22], distance = "bray", trace = FALSE, trymax = 100)
+```
+metaMDS is a "wrapper function" - takes raw species abundance data and standardizes is so that abundance isn't over important.  Then runs
+monoMDS a bunch of times until it times 2 similar configurations with minimized stress value and rotates answer.  trymax is number of tries
+ 
+Now look at the results
+```{r}
+IVt.nmds.bray
+```
+Plot the result
+```{r}
+plot(IVt.nmds.bray, type = "t")
+```
+And make a nicer plot
+```{r}
+PlotDataT<-fortify(IVt.nmds.bray)
+```
+And plot:
+```{r}
+ggplot(PlotDataT, aes(NMDS1,NMDS2,group = Score))+
+   geom_text(aes(label=Label, color = Score))+
+   scale_color_manual(values = c(sites = "brown", species = "green"))+
+   geom_point(aes(color=Score, shape =Score, size =.1))+
+   scale_color_manual(values = c(sites = "red", species = "black"))
+```
+Goodness of fit
+```{r}
+gof<-goodness(IVt.nmds.bray) #goodness of fit
+plot(IVt.nmds.bray, type = "t", main = "goodness of fit")
+points(IVt.nmds.bray, display = "sites", cex=gof*100)
+
+```
+#### And seedlings/saplings:
+```{r}
+IVs.nmds.bray<-metaMDS(IVsV[,3:22], distance = "bray", trace = FALSE, trymax = 100)
+```
+metaMDS is a "wrapper function" - takes raw species abundance data and standardizes is so that abundance isn't over important.  Then runs
+monoMDS a bunch of times until it times 2 similar configurations with minimized stress value and rotates answer.  trymax is number of tries
+ 
+Now look at the results
+```{r}
+IVs.nmds.bray
+```
+Plot the result
+```{r}
+plot(IVs.nmds.bray, type = "t")
+```
+And make a nicer plot
+```{r}
+PlotDataS<-fortify(IVs.nmds.bray)
+```
+And plot:
+```{r}
+ggplot(PlotDataS, aes(NMDS1,NMDS2,group = Score))+
+   geom_text(aes(label=Label, color = Score))+
+   scale_color_manual(values = c(sites = "brown", species = "green"))+
+   geom_point(aes(color=Score, shape =Score, size =.1))+
+   scale_color_manual(values = c(sites = "red", species = "black"))
+```
+Goodness of fit
+```{r}
+gof<-goodness(IVs.nmds.bray) #goodness of fit
+plot(IVs.nmds.bray, type = "t", main = "goodness of fit")
+points(IVs.nmds.bray, display = "sites", cex=gof*100)
+
+```
+
+
+
+
+
