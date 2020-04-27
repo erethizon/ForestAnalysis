@@ -5,7 +5,7 @@ output: html_notebook
 
 Calculating Leslie's importance values  to see if I get the same results she does when I compare with her work.
 
-Because we measured trees per plot but seedlings and saplings per circle, we need to calculate importance of trees vs. seedlings/saplings and then add them together to get a species importance value. 
+This is calcualating importance values per forest, without regard to trees vs. seedlings/saplings.
 
 Trees are per plot: One plot = 400m2, which is the same as 1/25 of a hectare; thus multiplying by a factor of 25 converts to trees per hectare.
 
@@ -47,65 +47,85 @@ species
 ```
 Looks good. Though the white birch are likely gray birch.
 
-Get a tree and seed/sap dataframe
-```{r}
-trees<-filter(DF, Type == "tree")
-seedsap<-filter(DF, Type != "tree")
-```
-We will now step through calculation of IV, first for trees and then repeat the same steps for seedlings/saplings.  Then we will do a "combined" for trees+seedlings/saplings.
-##Trees
+We will now step through calculation of IV across trees and seedlings/saplings
+
 ###Step 1. Density and relative density
-Establish area var for trees
+Establish area var for trees and for seedlings/saplings
 
 ```{r}
 APP_t<-400 #AreaPerPlot = 400m2 per forest plot
+APP_ss<-90 #Area per plot = 3 30m2 circles = 90 m2
 ```
 Determine number of trees per plot
+
+First add a new coding variable of tree vs. seed_sap
+
 ```{r}
-PerP<-trees %>% group_by(Forest, PlotID) %>% summarise(
-  treesPerP = length(Species)
-)
+DF$Code<-NA
+trees<-which(DF$Type == "tree")
+DF$Code[trees]<-"tree"
+seedsap<-which(DF$Type == "seedling" | DF$Type == "sapling")
+DF$Code[seedsap]<- "seed_sap"
 ```
-Get total density of trees per plot = #trees/area sampled
+Now get trees, seedling/saplings by plot
 ```{r}
-PerP<-PerP %>% mutate(
-  DensPerPlot = treesPerP/APP_t
+PerP<-DF %>% group_by(Forest, Code, PlotID) %>% summarise(
+  Number = length(Species)
 )
+
+trees<-which(PerP$Code == "tree")
+seedsap<-which(PerP$Code == "seed_sap")
+
+PerP$DensPerPlot<-NA
+PerP$DensPerPlot[trees]<-PerP$Number[trees]/APP_t
+PerP$DensPerPlot[seedsap]<-PerP$Number[seedsap]/APP_ss
 ```
 Get total density of trees per hectare per forest plot by multiplying DensPerPlot times 25 (the scaling factor for a forest plot)
 ```{r}
-PerP<-PerP %>% mutate(
-  DensPerHect=DensPerPlot*25
-)
+PerP$PerHect<-NA
+PerP$PerHect[trees]<- PerP$DensPerPlot[trees]*25
+PerP$PerHect[seedsap]<-PerP$DensPerPlot[seedsap]*333
+  
 ```
-Calculate density for each species where density = #trees per area
+Calculate density for each species where density = #trees or seedlings/saplings per area
 
 Start with number of trees by species for each plot
 ```{r}
-ImportancePerPlot<-trees %>% group_by(Forest, PlotID, Species) %>% summarise(
+ImportancePerPlot<-DF %>% group_by(Forest, Code, PlotID, Species) %>% summarise(
   Number = length(Species)
 )
 ```
 And now get density by species
 ```{r}
-ImportancePerPlot<-ImportancePerPlot %>% mutate(
-  PlotDensity = Number/APP_t
-)
+trees<-which(ImportancePerPlot$Code == "tree")
+seedsap<-which(ImportancePerPlot$Code == "seed_sap")
+
+ImportancePerPlot$PlotDensity<-NA
+ImportancePerPlot$PlotDensity[trees]<-ImportancePerPlot$Number[trees]/APP_t
+ImportancePerPlot$PlotDensity[seedsap]<-ImportancePerPlot$Number[seedsap]/APP_ss
 ```
 Now add the total density per plot to the ImportancePerPlot df so that we can do math with it. 
 
 Use a join to join by forest and plot id and then join PerP to ImportancePerPlot.
 
 ```{r}
-ImportancePerPlot<-left_join(ImportancePerPlot, PerP, by = c("Forest", "PlotID"))
+ImportancePerPlot<-left_join(ImportancePerPlot, PerP, by = c("Forest", "Code", "PlotID"))
 ```
-It worked! Now drop a couple of columns and rename a couple to keep things making sense:
+It worked! Now rename a couple to keep things making sense:
 ```{r}
-#drop density per hectare
-ImportancePerPlot<-select(ImportancePerPlot, -c(treesPerP,DensPerHect))
-#now rename
-ImportancePerPlot<-rename(ImportancePerPlot, dens_in_plot = PlotDensity, total_density = DensPerPlot )
+
+newnames<-names(ImportancePerPlot)
+newnames<-c("Forest","Code","PlotID","Species","NumSpecInPlot","PlotDensity", "TotNumInPlot", "TotDensPerPlot" ,"TotPerHect"   )
+names(ImportancePerPlot)<-newnames
 ```
+Now get density per hectare by species
+```{r}
+ImportancePerPlot$SpecPerHect<-NA
+ImportancePerPlot$SpecPerHect[trees]<-ImportancePerPlot$PlotDensity[trees]*25
+ImportancePerPlot$SpecPerHect[seedsap]<-ImportancePerPlot$PlotDensity[seedsap]*333
+```
+
+
 Now I can calculate relative density for each species 
 
 Relative density = (density for a species/total density of trees in plot)*100
@@ -547,7 +567,7 @@ Now try a second way to get importance values for the whole forest (seedlings an
 
 
 ###Step 1. Density and relative density
-Establish area var for trees and sof seedlings/saplings
+Establish area var for trees and for seedlings/saplings
 
 Area variable for trees = APP_t = 400
 Area varaible for saplings/seedlings = APP_ss = 30
